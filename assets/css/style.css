@@ -1,0 +1,193 @@
+.center-head {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.center-head h1 {
+	font-family: 'Georgia', Times;
+	letter-spacing: 20px;
+	font-weight: 500;
+}
+
+.center-head h4 {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 1px;
+	font-weight: 200;
+}
+
+.navbar {
+	text-align: center;
+}
+
+.navbar-inner {
+	min-height: 40px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin: auto;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #6a6a6a;
+}
+
+.top {
+	border-top: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+	width: 305px;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #c03030;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+h4.welcome {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.social {
+	margin-top: 50px;
+}
+
+.circle {
+	border-radius: 100%;
+	/*background: #181818;*/
+	background: #777;
+	list-style-type: none;
+	width: 48px;
+	height: 48px;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center;
+	position: relative; /*Containing div must have a position value */
+    display: inline-block;
+}
+
+.circle a {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    text-decoration:none; /* Makes sure the link doesn't get underlined */
+    z-index:10; /* raises anchor tag above everything else in div */
+    background-color:white; /*workaround to make clickable in IE */
+    opacity: 0; /*workaround to make clickable in IE */
+    filter: alpha(opacity=1); /*workaround to make clickable in IE */
+}
+
+.circle:hover {
+	background-color: #c03030;
+}
+
+.facebook {
+	background-size: 25%;
+	background-image: url(../img/social-facebook.png);
+}
+
+.twitter {
+	background-image: url(../img/social-twitter.png);
+}
+
+.linkedin {
+	background-size: 35%;
+	background-image: url(../img/social-linkedin.png);
+}
+
+.tumblr {
+	background-size: 35%;
+	background-image: url(../img/social-tumblr.png);
+}
+
+.footer {
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 400px;
+}
+
+.social-side {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+
+/*About Page*/
+
+h4.headline,
+h3.homework-title {
+	font-family: 'Open Sans', Helvetica, Sans-Serif;
+}
+
+p,
+ul,
+li {
+	font-family: 'PT Serif', Georgia, Serif;
+}
+
+/*Experiments Page*/
+
+.myalert {
+	background-color: #40aaef;
+
+  /*border-color: #04c #04c #002a80 #04c;*/
+  /*border-width: 1px;*/
+  /*border-style: solid;*/
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font: 14px/20px "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin: 0;
+  padding: 12px 12px;
+  text-align: left;
+  text-decoration: none;
+  /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);*/
+  vertical-align: middle;
+  width: 90%;
+  margin: 10px;
+}
+
+.myalert-large {
+	padding-top: 40px 12px;
+	font-size: 20px;
+}
+
+.mysuccess {
+	background-color: #56be8e;
+}
+
+.mywarning {
+	background-color: #faa928;
+}
+
+.myerror {
+	background-color: #f27398;
+}
+
+.mywell {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  /*background-color: #f5f5f5;*/
+  border: 1px solid #e3e3e3;/*
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);*/
+}
+
+
+
+
+
+
+
