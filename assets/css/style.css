@@ -36,7 +36,7 @@
 .top {
 	border-top: 1px solid #efefef;
 	border-bottom: 1px solid #efefef;
-	width: 305px;
+	width: 470px;
 }
 
 .navbar .nav > li > a:focus,
@@ -106,11 +106,9 @@ h4.welcome {
 	background-image: url(../img/social-tumblr.png);
 }
 
-.footer {
-	margin-top: 100px;
-	margin-right: auto;
-	margin-left: auto;
-	width: 400px;
+.bottom {
+  margin-top: 100px;
+  width: 370px;
 }
 
 .social-side {
@@ -132,7 +130,14 @@ li {
 	font-family: 'PT Serif', Georgia, Serif;
 }
 
+
 /*Experiments Page*/
+
+.post-text p ol li ul {
+  text-align: justify;
+  font-size: 14px;
+  font-family: 'Open Sans', Helvetica, Sans-Serif;
+}
 
 .myalert {
 	background-color: #40aaef;
@@ -185,9 +190,222 @@ li {
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);*/
 }
 
+/*Photo pages for practicing floats*/
+.row-a {
+  margin-left: -20px;
+  *zoom: 1;
+}
+
+.row-a:before,
+.row-a:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.row-a:after {
+  clear: both;
+}
+
+.firstrow img {
+  height: 120px;
+  width: 100%;
+  border-bottom: 5px solid white;
+  border-left: 5px solid white;
+}
+
+.secondrow img {
+  height: 470px;
+  width: 100%;
+  border-bottom: 5px solid white;
+  border-left: 5px solid white;
+}
+
+.thirdrow img {
+  height: 218px;
+  width: 100%;
+  border-bottom: 5px solid white;
+  border-left: 5px solid white;
+}
+
+[class*="spad"] {
+  float: left;
+  min-height: 1px;
+  margin: 0px;
+ /* margin-left: 10px;
+  margin-right: 10px;*/
+}
+
+.container-a {
+  width: 960px;
+}
+
+.container-a {
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+
+.container-a:before,
+.container-a:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.container-a:after {
+  clear: both;
+}
+
+.spad-6a {
+  width: 960px;
+}
+
+.spad-5a {
+  width: 800px;
+}
+
+.spad-4a {
+  width: 640px;
+}
+
+.spad-3a {
+  width: 480px;
+}
+
+.spad-2a {
+  width: 320px;
+}
+
+.spad-1a {
+  width: 160px;
+}
+
+.container-a {
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+  position: relative;
+}
+
+.container-a:before,
+.container-a:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.container-a:after {
+  clear: both;
+}
 
 
+.bttn.header:hover {
+  -webkit-box-shadow:rgba(0,0,0,0) 0 1px 2px,rgba(0,0,0,0.5) 0 2px 4px inset;
+  -moz-box-shadow:rgba(0,0,0,0) 0 1px 2px,rgba(0,0,0,0.5) 0 2px 4px inset;
+  box-shadow:rgba(0,0,0,0) 0 1px 2px,rgba(0,0,0,0.5) 0 2px 4px inset;
+  background:#276a77;
+}
+
+/*Family Tree*/
+
+.generation {
+  margin-bottom: 70px;
+}
+
+.grandkids {
+  margin-left: 30px;
+}
+
+.phil-kids {
+  position: relative;
+  left: 100px;
+  display: inline-block;
+}
+
+.al-so {
+  position: relative;
+  left: 10px;
+  display: inline-block;
+}
+
+.married {
+  margin-left: 35px;
+}
+
+.phil-pam {
+  position: relative;
+  left: 120px;
+  display: inline-block;
+}
+
+.audrey {
+  position: relative;
+  left: 90px;
+  display: inline-block;
+}
+
+.dad-mom {
+  position: relative;
+  left: 270px;
+  display: inline-block;
+}
+
+.grandparents-dad {
+  position: relative;
+  left: 75px;
+  display: inline-block;
+}
+
+.grandparents-mom {
+  position: relative;
+  left: 160px;
+  display: inline-block;
+}
+
+.tree {
+  height: 900px;
+  width: 100%;
+  background-image: url(../img/family-lines-grey.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 180px;
+  z-index: -1;
+}
+
+/*Tooltips*/
 
 
+p.photo_container {
+  width: 135px;
+  height: 180px;
+  position: relative;
+  display: inline-block;
+}
 
+p.photo_container a {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+  font-weight: normal;
+}
 
+p.photo_container a span {
+  visibility:hidden;
+  position:absolute;
+  bottom: 0px;
+  background-color:rgba(0,0,0,0.5);
+  color: white;
+  width:130px;
+  font-size:92%;
+  padding:3px;
+  cursor:default;
+}
+
+p.photo_container a:hover span {
+  visibility:visible;
+}
+
+p.photo_container img {
+  /*border:1px solid gray;*/
+}
