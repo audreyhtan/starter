@@ -8,6 +8,7 @@
 	font-family: 'Georgia', Times;
 	letter-spacing: 20px;
 	font-weight: 500;
+  text-transform: uppercase;
 }
 
 .center-head h4 {
@@ -58,7 +59,6 @@ h4.welcome {
 
 .circle {
 	border-radius: 100%;
-	/*background: #181818;*/
 	background: #777;
 	list-style-type: none;
 	width: 48px;
@@ -67,7 +67,7 @@ h4.welcome {
 	background-size: 50%;
 	background-position: center;
 	position: relative; /*Containing div must have a position value */
-    display: inline-block;
+  display: inline-block;
 }
 
 .circle a {
@@ -133,18 +133,33 @@ li {
 
 /*Experiments Page*/
 
-.post-text p ol li ul {
+.post-text {
   text-align: justify;
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Sans-Serif;
+  font-family: 'PT Serif', Georgia, Serif;
+  padding-right: 30px;
+}
+
+.post-text p:nth-of-type(n+2) {
+  text-indent: 10%;
+}
+
+.post-text p:nth-of-type(1) {
+  font-style: italic;
+}
+
+.post-text a[href^="https://"] {
+  padding-right: 20px;
+  background: url(../img/lock.png) no-repeat right;
+}
+
+.post-text a[target="_blank"] {
+  padding-left: 20px;
+  background: url(../img/ui-tab--arrow.png) no-repeat left;
 }
 
 .myalert {
 	background-color: #40aaef;
-
-  /*border-color: #04c #04c #002a80 #04c;*/
-  /*border-width: 1px;*/
-  /*border-style: solid;*/
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -153,7 +168,6 @@ li {
   padding: 12px 12px;
   text-align: left;
   text-decoration: none;
-  /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);*/
   vertical-align: middle;
   width: 90%;
   margin: 10px;

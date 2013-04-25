@@ -13,7 +13,7 @@
 
     <div class="container">
       <header class="center-head">
-        <h1> READ AUDREY </h1>
+        <h1> Read Audrey </h1>
         <h4> A lady in progress </h4>
       </header>
 
@@ -32,34 +32,73 @@
         <div class="row">
           <div class="span6 offset1">
 
+<!--week3 homework-->
+<h3 class = "homework-title">Complex Selectors</h3>
+<p>Star Date: April 24, 2013 (SL03)</p>
+<div class="post-text">
+<p>Complex selectors are complex, but just like people, complex can mean fun.  This weeks assignement was to use complex selectors to target specific elements that have certain characteristics.  Complex selectors improve the ability to separate content from style.  They give us the ability to style elements without needing to apply classes to every element that needs style.  Great for styling navigation, tables or controls that are more dynamic.</p>
+
+<p>This is the second pargraph of my entry, and looks like it's indenting just the say I want.  The indent is by percentage instead of pixels.  I'm getting excited about RWD for next weeks lesson.  Also had some fun and made the first paragraph italics.  Think it will be good to get into the habit of summarizing each post in an opening paragraph that's styled a bit different.   Here's the code I used.
+  <code>.post-text p:nth-of-type(n+2) {
+  text-indent: 10%;
+}
+
+.post-text p:nth-of-type(1) {
+  font-style: italic;
+}
+</code>
+<p>Also used Attribute Begins and Attribute equals to target every link that is a secure website and every link that opens in a new window.  Had to add some padding and the url to the images.  Not too hard, but it made me wonder - can the selector target the same element and apply two different styles if the element meets both attribute specifications?  For example, if the lock image is to appear before secure site link, and the window image is to appear after, and the link is both a secure site the opens in another window - will both the lock and the window image appear before and after the link?  I tried making this work, but I failed.  Maybe I was doing something wrong?</p>
+<code>
+.post-text a[href^="https://"] {
+  padding-right: 20px;
+  background: url(../img/lock.png) no-repeat right;
+}
+
+.post-text a[target="_blank"] {
+  padding-left: 20px;
+  background: url(../img/ui-tab--arrow.png) no-repeat left;
+}</code>
+
+<a href="https://www.chase.com/" alt="Chase Bank">Chase Bank</a>.</p>
+
+<p>Here is an unsecure link that opens in a new window <a href="http://waggit.com" target="_blank">Waggit</a> is awesome!!!</p>
+
+
+
+</div><!--post-text-->
+
+
+
+<!--end week3 homework-->
 
 <!--week2 homework-->
 
 <h3 class = "homework-title">Detailed Positioning</h3>
 <p>Star Date: April 17, 2013 (SL02)</p>
 <div class="post-text">
-<p>This weeks assignment was to investigate the galaxy of detailed positioning.  Understanding the behavior of floats, different species of positioning and the third dimension z-index was top priority.
-</p>
+<p>This weeks assignment was to investigate the galaxy of detailed positioning.  Understanding the behavior of floats, different species of positioning and the third dimension z-index was top priority.</p>
 
-<p>I practiced floats by creating a Twitter-Bootstrapped inspired grid that is also 960px wide, but only has 6 columns.  I used this as my chance to add a <a href="photos.html">photo gallery</a> and positioned my images using the new column widths and floating all the images in rows that had different heights.  I really should have optimized my images beforhand because the pages originally loaded super slow. Even after running them through <a href="http://imageoptim.com/">ImageOptim</a>, the files were still pretty huge and scrolling down the page created a lag.  The only way I knew how to fix this was to open each photo in Photoshop and save each one for a Web device. Huge time suck.  Is this the only way to do this?  </p>
-<p>To practice positioning, I thought - "Hey! I should make my <a href="family.html">family tree</a>!"  I had no idea it would turn out to be a LOT of work.  I had to collect even MORE photos (this required a lot of Facebook stalking), crop and resize them and create a custom image that would be the 'tree' in the background.  Friggen tree.
-</p>
+<p>I practiced floats by creating a Twitter-Bootstrapped inspired grid that is also 960px wide, but only has 6 columns.  I used this as my chance to add a <a href="photos.html">photo gallery</a> and positioned my images using the new column widths and floating all the images in rows that had different heights.  I really should have optimized my images beforhand because the pages originally loaded super slow. Even after running them through <a href="http://imageoptim.com/">ImageOptim</a>, the files were still pretty huge and scrolling down the page created a lag.  The only way I knew how to fix this was to open each photo in Photoshop and save each one for a Web device. Huge time suck.  Is this the only way to do this? </p>
+
+<p>I practiced floats by creating a Twitter-Bootstrapped inspired grid that is also 960px wide, but only has 6 columns.  I used this as my chance to add a <a href="photos.html">photo gallery</a> and positioned my images using the new column widths and floating all the images in rows that had different heights.  I really should have optimized my images beforhand because the pages originally loaded super slow. Even after running them through <a href="http://imageoptim.com/">ImageOptim</a>, the files were still pretty huge and scrolling down the page created a lag.  The only way I knew how to fix this was to open each photo in Photoshop and save each one for a Web device. Huge time suck.  Is this the only way to do this?</p>
+
+<p>To practice positioning, I thought - "Hey! I should make my <a href="family.html">family tree</a>!"  I had no idea it would turn out to be a LOT of work.  I had to collect even MORE photos (this required a lot of Facebook stalking), crop and resize them and create a custom image that would be the 'tree' in the background.  Friggen tree.</p>
+
 <p>To sum it up, here's what I learned/remember about positioning:</p>
-<p>
   <ol>
     <li>If you're going to float stuff in a div, put it in a group with these properties.  Just do it.  Works across browsers that your pesky boss will ask you about. </li>
     <code>.group:before, .group:after {content: "";display: table;}
 .group:after {clear: both;}
 .group{*zoom: 1;}</code></br></br>
 <li>Positioning with CSS generally stinks.  It's confusing, the terms are not intuitive and it's frustraing.  So many times I asked myself, "WHY CAN'T YOU JUST MOVE OVER THERE!?"  My big takeaway was try to keep things simple and think of ways you can keep things in the natural flow.  That's my opinion at least.  But if you must do anything beyond the static default position, here's how I remember the difference between the other ones. </br></br>
-  <strong>Relative</strong> is about where it would have been if it had been static.  It's like that surfer from the beach that wants to hold his place in line but has just got to position himself on that wave over there.  He's all like, "Hey man, mind holding my static spot here while I chill over there?  It's all relative man!  Duuuude.  Thanks, man."</br></br>
-  <strong>Absolute</strong> is about the parent element.  It's like your parents telling you you must be here at all times according to their boundries, as long as they've stated their position other than the normal/default static position.  It's like your parent saying, "you must absolutely do what I say." Absolute positioning is always relative to the parent, but if your parents are flakey and haven't stated their position, deciding vote goes to the body.</br></br>
-  <strong>Fixed</strong> is like putting a sticky note on your computer.  It's going to stay there, no matter where you scroll on the page.
+  <em>Relative</em> is about where it would have been if it had been static.  It's like that surfer from the beach that wants to hold his place in line but has just got to position himself on that wave over there.  He's all like, "Hey man, mind holding my static spot here while I chill over there?  It's all relative man!  Duuuude.  Thanks, man."</br></br>
+  <em>Absolute</em> is about the parent element.  It's like your parents telling you you must be here at all times according to their boundries, as long as they've stated their position other than the normal/default static position.  It's like your parent saying, "you must absolutely do what I say." Absolute positioning is always relative to the parent, but if your parents are flakey and haven't stated their position, deciding vote goes to the body.</br></br>
+  <em>Fixed</em> is like putting a sticky note on your computer.  It's going to stay there, no matter where you scroll on the page.
 </li></br></br>
 <li>Z-index is great for letting your absolute or relatively positioned objects rest on top of eachother and display in the order you want.  It's like when you're holding a fanned out deck of cards, the card that's on top is closest to you - that's the card with the highest z-index.  Remember the x and y axis we learned about in grade school math?  The y-axis arrow went up and the x-axis went to the right. Imagine the z-axis as an arrow that pops out of the screen, straight towards you.  The z-index makes things 3D.
 </li>
 </p>
-</div>
+</div><!--end week2 homework -->
 
 <!--week1 homework-->
 
@@ -101,14 +140,14 @@
           </span>
       </div><!--alerts-->
 
-<!--week1 homework -->
+<!-- homework -->
 
           </div><!--span6-->
 
 
-          <div class="span4 offset1" >
+          <div class="span4" >
 
-            <h4 class="welcome"> <strong>Welcome to my practice Pad.</strong></br></br> This is where I'll be doing my <a href="http://www.starterleague.com/">Starter League</a> Weekly homework assignments.</br></br>Hope I don't fall behind and put out things that I'm proud of. </br></br>Just keep swimming!
+            <h4 class="welcome"> <strong>Welcome to my practice Pad.</strong></br></br> This is where I'll be doing my <a href="http://www.starterleague.com/">Starter League</a> Weekly <a href="http://shayhowe.github.io/advanced-guide-html-css/" alt="Starter League Homework" target="_blank">homework assignments</a>.</br></br>Hope I don't fall behind and put out things that I'm proud of. </br></br>Just keep swimming!
             </h4>
 
             <div class="social">
