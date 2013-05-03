@@ -11,57 +11,86 @@
   </head>
   <body>
 
-    <div class="container">
+    <div class="container-a-fluid">
       <header class="center-head">
-        <h1> Read Audrey </h1>
-        <h4> A lady in progress </h4>
+        <div class="titlenav">
+          <h1>Read Audrey</h1>
+          <h4>A lady in progress</h4>
+          <div class="navbar-a">
+            <ul class="navbar-b group">
+              <li><a href="index.html">Welcome</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="experiments.html">Experiments</a></li>
+              <li><a href="photos.html">Photos</a></li>
+              <li><a href="family.html">Family</a></li>
+            </ul>
+          </div>
+        </div>
       </header>
 
-      <div class="navbar">
-        <div class="navbar-inner top">
-          <ul class="nav">
-            <li><a href="index.html">Welcome</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="experiments.html">Experiments</a></li>
-            <li><a href="photos.html">Photos</a></li>
-            <li><a href="family.html">Family</a></li>
-          </ul>
-        </div>
-      </div>
+<div class="container-middle">
+        <div class="row-fluid">
+          <div class="span7">
 
-        <div class="row">
-          <div class="span6 offset1">
+<!-- week4 homework -->
+<h3 class = "homework-title">Responsive Web Design</h3>
+<p>Star Date: May 3, 2013 (SL04)</p>
+<div class="post-text">
+<p>RWD still seems like a buzzword in web development, but when you think about how many new ways we consume news and media now compared to 10 years ago, it's a good idea to understand the tech that's responsible and keep up with the changes.</p>
+
+<p>Here are some of the main takeaways from this weeks lesson:</p>
+
+<ol>
+<li>When designing a site to be responsive, it's smarter to <strong>design</strong> for content, not devices.  New screen sizes and improved retina displays are just a few examples of things that are constantly changing, so if you're designing strictly for those things, it will be like trying design fancy clotes for a growing 2 year old.</li>
+<li>Running this JavaScript function in web browser developer tools will tell you the size of your window.</br>
+<code>window.outerWidth</code></br>
+But apparently there's a web-kit but that confuses the scrollbar as part of the window sometimes, so it might be a few pixels off.  Still - it was cool to start running commands in the Google Chrome console.
+My TA Dan Kim told us about a Chrome extension called <a href="https://chrome.google.com/webstore/detail/windowresizer/kkelicaakdanhinjdeammmilcgefonfh"
+alt="Window Resizer" target="_blank">Window Resizer</a>. It not only allows you to snap to specific common sizes, but also tells you your window size in the lower right hand corner as you resize your window.  Thanks, Dan!
+</li>
+<li>I also learned the difference between responsive and fluid design.
+  <ul>
+    <li>Responsive design is implemented with media queries.The queires figure out what kind of viewport size, screen resolution, etc and then displays the content according to how we've responsively designed it. If people are talking about breakpoints and min/max-widths, they're talking about responsive design.</li>
+    <li>Fluid design is all about percentages instead of pixels.  So instead of saying "This div is going to be 400px wide within its 1000px wide container" you say "This div is going to be 40% of the width of its container."  Fluid designs support the notion of designing for proportion vs fixed dimensions that could look wonky on different viewports.</li>
+  </ul></li>
+</ol>
+<p>I just finished the work to convert most of my site to be fluid and responsive.  It was tricky, but I think I got it.  Not only did I learn something new, I'm cleaning up code from prior weeks that I've since learned how to do better.Can't wait to get more practice.</p>
+
+</div>
+
 
 <!--week3 homework-->
 <h3 class = "homework-title">Complex Selectors</h3>
 <p>Star Date: April 24, 2013 (SL03)</p>
 <div class="post-text">
-<p>Complex selectors are complex, but just like people, complex can mean fun.  This weeks assignement was to use complex selectors to target specific elements that have certain characteristics.  Complex selectors improve the ability to separate content from style.  They give us the ability to style elements without needing to apply classes to every element that needs style.  Great for styling navigation, tables or controls that are more dynamic.</p>
+<p>Complex selectors are complex, but just like people, complex can mean fun.  This weeks assignement was to use complex selectors to target specific elements that have certain characteristics.  Complex selectors improve the ability to separate content from style.  Great for styling navigation, tables or controls that are more dynamic.</p>
 
-<p>This is the second pargraph of my entry, and looks like it's indenting just the say I want.  The indent is by percentage instead of pixels.  I'm getting excited about RWD for next weeks lesson.  Also had some fun and made the first paragraph italics.  Think it will be good to get into the habit of summarizing each post in an opening paragraph that's styled a bit different.   Here's the code I used.
-  <code>.post-text p:nth-of-type(n+2) {
-  text-indent: 10%;
-}
+<p>This is the second pargraph of my entry, and looks like it's indenting just the say I want.  The indent is by percentage instead of pixels.  I'm getting excited about RWD for next weeks lesson.  Also had some fun and made the first paragraph italics.  Think it will be good to get into the habit of summarizing each post in an opening paragraph that's styled a bit different.   Here's the code I used.</p>
+  <code>.post-text p:nth-of-type(n+2) {</br>
+  text-indent: 10%;</br>
+}</br>
 
-.post-text p:nth-of-type(1) {
-  font-style: italic;
+.post-text p:first-of-type { </br>
+  font-style: italic;</br>
 }
 </code>
-<p>Also used Attribute Begins and Attribute equals to target every link that is a secure website and every link that opens in a new window.  Had to add some padding and the url to the images.  Not too hard, but it made me wonder - can the selector target the same element and apply two different styles if the element meets both attribute specifications?  For example, if the lock image is to appear before secure site link, and the window image is to appear after, and the link is both a secure site the opens in another window - will both the lock and the window image appear before and after the link?  I tried making this work, but I failed.  Maybe I was doing something wrong?</p>
+<p>Also used Attribute Begins and Attribute Equals to target every link that is a secure website and every link that opens in a new window.  Had to add some padding and the url to the images. :before and :after are so fun to use!</p>
+
+<p><a href="https://www.chase.com/" target = "_blank" alt="Chase Bank">Chase Bank </a>is my bank.  I guess they're an okay bank.  They kinda feel like the bad guys.  This link opens in a new window and is also a secure link.</p>
+
+<p>Here is a link that opens in a new window <a href="http://waggit.com" target="_blank">Waggit</a>.  Waggit is for people that love dogs.  People who love dogs are awesome.  Therefore Waggit is awesome!!!</p>
 <code>
-.post-text a[href^="https://"] {
-  padding-right: 20px;
-  background: url(../img/lock.png) no-repeat right;
-}
-
-.post-text a[target="_blank"] {
-  padding-left: 20px;
-  background: url(../img/ui-tab--arrow.png) no-repeat left;
+.post-text a[href^="https://"]:before { </br>
+  padding: 2px;</br>
+  content: url(../img/lock.png);</br>
+}</br>
+</br>
+.post-text a[target="_blank"]:after { </br>
+  padding: 2px; </br>
+  content: url(../img/ui-tab--arrow.png); </br>
 }</code>
+</br>
 
-<a href="https://www.chase.com/" alt="Chase Bank">Chase Bank</a>.</p>
-
-<p>Here is an unsecure link that opens in a new window <a href="http://waggit.com" target="_blank">Waggit</a> is awesome!!!</p>
 
 
 
@@ -87,9 +116,17 @@
 <p>To sum it up, here's what I learned/remember about positioning:</p>
   <ol>
     <li>If you're going to float stuff in a div, put it in a group with these properties.  Just do it.  Works across browsers that your pesky boss will ask you about. </li>
-    <code>.group:before, .group:after {content: "";display: table;}
-.group:after {clear: both;}
-.group{*zoom: 1;}</code></br></br>
+    <code>
+      .group:before,</br>
+      .group:after { </br>
+        content: ""; </br>
+        display: table;</br>
+    }</br>
+      .group:after {</br>
+        clear: both;</br>}</br>
+      .group{</br>
+        *zoom: 1;</br>
+}</code></br></br>
 <li>Positioning with CSS generally stinks.  It's confusing, the terms are not intuitive and it's frustraing.  So many times I asked myself, "WHY CAN'T YOU JUST MOVE OVER THERE!?"  My big takeaway was try to keep things simple and think of ways you can keep things in the natural flow.  That's my opinion at least.  But if you must do anything beyond the static default position, here's how I remember the difference between the other ones. </br></br>
   <em>Relative</em> is about where it would have been if it had been static.  It's like that surfer from the beach that wants to hold his place in line but has just got to position himself on that wave over there.  He's all like, "Hey man, mind holding my static spot here while I chill over there?  It's all relative man!  Duuuude.  Thanks, man."</br></br>
   <em>Absolute</em> is about the parent element.  It's like your parents telling you you must be here at all times according to their boundries, as long as they've stated their position other than the normal/default static position.  It's like your parent saying, "you must absolutely do what I say." Absolute positioning is always relative to the parent, but if your parents are flakey and haven't stated their position, deciding vote goes to the body.</br></br>
@@ -145,7 +182,7 @@
           </div><!--span6-->
 
 
-          <div class="span4" >
+          <div class="span5">
 
             <h4 class="welcome"> <strong>Welcome to my practice Pad.</strong></br></br> This is where I'll be doing my <a href="http://www.starterleague.com/">Starter League</a> Weekly <a href="http://shayhowe.github.io/advanced-guide-html-css/" alt="Starter League Homework" target="_blank">homework assignments</a>.</br></br>Hope I don't fall behind and put out things that I'm proud of. </br></br>Just keep swimming!
             </h4>
@@ -159,16 +196,11 @@
 
           </div><!--span4-->
         </div><!--row-->
+      </div>
 
-        <footer>
-          <div class="navbar">
-            <div class="navbar-inner bottom">
-              <ul class="nav">
-                &copyCopyright Audreyhtan.com - All rights reserved.
-              </ul>
-            </div>
-          </div>
-      </footer>
+        <footer class="bottom">
+               <p> &copy Copyright Audreyhtan.com - All rights reserved. </p>
+        </footer>
     </div>
 
 
