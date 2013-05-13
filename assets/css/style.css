@@ -151,6 +151,12 @@ h4.welcome {
 .span4 {
   min-width: 97.1428571428571%;
 }
+.row-fluid .span7 {
+  width: 100%;
+  *width: 100%;
+}
+
+
 }
 
 .social {
@@ -241,6 +247,12 @@ li {
   font-size: 14px;
   font-family: 'PT Serif', Georgia, Serif;
   padding-right: 30px;
+}
+
+@media (max-width: 500px) {
+  .post-text {
+    padding-right: 0px;
+    }
 }
 
 .post-text p:nth-of-type(n+2) {
