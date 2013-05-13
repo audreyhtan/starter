@@ -1,0 +1,138 @@
+$font-base: 14px
+$serif: 'PT Serif', Georgia, Serif
+
+p,
+ul,
+li,
+  font: $font-base $serif
+
+.container-middle
+  margin: 0 auto
+  @media (max-width: 700px)
+    max-width: 85%
+
+@mixin photorow($height, $border: 5px)
+  height: $height
+  width: 100%
+  border-bottom: $border solid white
+  border-left: $border solid white
+
+.firstrow img
+  @include photorow(120px)
+
+.secondrow img
+  @include photorow(470px)
+
+.fourthrow img
+  @include photorow(200px, 10px)
+
+.rel-inlineb
+  position: relative
+  display: inline-block
+
+.phil-kids
+  @extend .rel-inlineb
+  left: 100px
+
+.al-so
+  @extend .rel-inlineb
+  left: 10px
+
+.phil-pam
+  @extend .rel-inlineb
+  left: 120px
+
+.audrey
+  @extend .rel-inlineb
+  left: 90px
+
+.dad-mom
+  @extend .rel-inlineb
+  left: 270px
+
+.grandparents-dad
+  @extend .rel-inlineb
+  left: 75px
+
+.grandparents-mom
+  @extend .rel-inlineb
+  left: 160px
+
+@mixin adult($left, $position:relative, $display:inline-block)
+  left: $left
+  position: $position
+  display: $display
+
+.phil-kids
+  @include adult($left:100px)
+
+.al-so
+  @include adult($left:10px)
+
+.phil-pam
+  @include adult($left:120px)
+
+.audrey
+  @include adult($left:90px)
+
+.dad-mom
+  @include adult($left:270px)
+
+.grandparents-dad
+  @include adult($left:75px)
+
+.grandparents-mom
+  @include adult($left:160px)
+
+@mixin boxshadow($shadow: 5px 5px 0 #eee)
+  -webkit-box-shadow: $shadow
+  -moz-box-shadow: $shadow
+  box-shadow: $shadow
+
+.btn
+  @include boxshadow($shadow: 2px 2px 0 #fff)
+
+$temp: 91
+.temp
+  @if $temp >= 90
+    background-color: red
+  @else if $temp >= 70
+    background-color: green
+  @else if $temp >= 32
+    background-color: blue
+  @else
+    background-color: black
+
+@for $i from 1 through 6
+  .item-#{$i}
+    width: 2em * $i
+
+
+$bksz: 55%
+@each $social in fb, twttr, lnkdn, tmblr
+  .#{$social}-icon
+    background-image: url('/images/#{$social}.png')
+    @if $bksz >= 50%
+      background-size: $bksz
+
+$color: #D06336
+@for $i from 1 through 6
+  .spad-#{$i}a
+    width: $i * 160px
+    // color: invert(rgba($green, .25))
+    color: rgba($color, .25)
+
+$color: #333
+.div
+  background-color: invert($color)
+
+
+
+
+
+
+
+
+
+
+

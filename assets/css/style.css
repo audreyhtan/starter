@@ -139,7 +139,7 @@ h4.welcome {
 
 .container-middle {
   margin: 0 auto;
-  max-width: 85%;
+  max-width: 95%;
 }
 .container-middle-home .span5 h4,
 .container-middle-home .span5 .social {
@@ -357,12 +357,8 @@ li {
   padding-right: 20px;
   padding-left: 20px;
   *zoom: 1;
-}
-
-.container-a {
   margin-right: auto;
   margin-left: auto;
-  *zoom: 1;
   position: relative;
 }
 
@@ -407,11 +403,7 @@ li {
 .container-a-fluid {
   max-width: 960px;
   *zoom: 1;
-}
-
-.container-a-fluid {
   margin: 0 auto;
-  *zoom: 1;
 }
 
 .container-a-fluid:before,
@@ -460,18 +452,6 @@ li {
 .firstrow .spad-1a-fluid,
 .thirdrow .spad-1a-fluid {
   width: 33.3333333333333%;  /* 1/three columns*/
-}
-
-/*.firstrow img {
-  height: 200px;
-}
-
-.secondrow img {
-  height: 350px;
-}
-
-.thirdrow img {
-  height: 300px;*/
 }
 } /*media query*/
 

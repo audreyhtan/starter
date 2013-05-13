@@ -1,0 +1,145 @@
+p,
+ul,
+li {
+  font: 14px "PT Serif", Georgia, Serif; }
+
+.container-middle {
+  margin: 0 auto; }
+  @media (max-width: 700px) {
+    .container-middle {
+      max-width: 85%; } }
+
+.firstrow img {
+  height: 120px;
+  width: 100%;
+  border-bottom: 5px solid white;
+  border-left: 5px solid white; }
+
+.secondrow img {
+  height: 470px;
+  width: 100%;
+  border-bottom: 5px solid white;
+  border-left: 5px solid white; }
+
+.fourthrow img {
+  height: 200px;
+  width: 100%;
+  border-bottom: 10px solid white;
+  border-left: 10px solid white; }
+
+.familypos, .phil-kids, .al-so, .phil-pam {
+  position: relative;
+  display: inline-block; }
+
+.phil-kids {
+  left: 100px; }
+
+.al-so {
+  left: 10px; }
+
+.phil-pam {
+  left: 120px; }
+
+.phil-kids {
+  left: 100px;
+  position: relative;
+  display: inline-block; }
+
+.al-so {
+  left: 10px;
+  position: relative;
+  display: inline-block; }
+
+.phil-pam {
+  left: 120px;
+  position: relative;
+  display: inline-block; }
+
+.audrey {
+  left: 90px;
+  position: relative;
+  display: inline-block; }
+
+.dad-mom {
+  left: 270px;
+  position: relative;
+  display: inline-block; }
+
+.grandparents-dad {
+  left: 75px;
+  position: relative;
+  display: inline-block; }
+
+.grandparents-mom {
+  left: 160px;
+  position: relative;
+  display: inline-block; }
+
+.btn {
+  -webkit-box-shadow: 2px 2px 0 white;
+  -moz-box-shadow: 2px 2px 0 white;
+  box-shadow: 2px 2px 0 white; }
+
+.temp {
+  background-color: red; }
+
+.item-1 {
+  width: 2em; }
+
+.item-2 {
+  width: 4em; }
+
+.item-3 {
+  width: 6em; }
+
+.item-4 {
+  width: 8em; }
+
+.item-5 {
+  width: 10em; }
+
+.item-6 {
+  width: 12em; }
+
+.fb-icon {
+  background-image: url("/images/fb.png");
+  background-size: 55%; }
+
+.twttr-icon {
+  background-image: url("/images/twttr.png");
+  background-size: 55%; }
+
+.lnkdn-icon {
+  background-image: url("/images/lnkdn.png");
+  background-size: 55%; }
+
+.tmblr-icon {
+  background-image: url("/images/tmblr.png");
+  background-size: 55%; }
+
+.spad-1a {
+  width: 160px;
+  color: rgba(131, 198, 63, 0.25); }
+
+.spad-2a {
+  width: 320px;
+  color: rgba(131, 198, 63, 0.25); }
+
+.spad-3a {
+  width: 480px;
+  color: rgba(131, 198, 63, 0.25); }
+
+.spad-4a {
+  width: 640px;
+  color: rgba(131, 198, 63, 0.25); }
+
+.spad-5a {
+  width: 800px;
+  color: rgba(131, 198, 63, 0.25); }
+
+.spad-6a {
+  width: 960px;
+  color: rgba(131, 198, 63, 0.25); }
+
+.div {
+  background-color: #cccccc; }

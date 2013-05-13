@@ -32,19 +32,42 @@
         <div class="row-fluid">
           <div class="span7">
 
+<!-- week5 homework -->
+<h3 class = "homework-title">Preprocessors</h3>
+<p>Star Date: May 13, 2013 (SL05)</p>
+<div class="post-text">
+<p>This weeks lesson introcuced us to Preprocessors.  Simply put, a preprocessor is, 'a program that takes one type of data and converts it to another type of data.' Seems like there are a lot of preprocessors out there, but in the context of this lesson, we learned about two: 1) <a href='http://haml.info/' alt='haml'><em>Haml</em></a> and 2) <a href='http://sass-lang.com/' alt='SASS'><em>Sass</em></a>.  We were also introduced to nifty resources like <a hrf='http://incident57.com/codekit/' alt='CodeKit' target='_blank'>Codekit</a>, <a href='http://compass-style.org/' alt='Compass' target='_blank'>Compass</a> and <a href='http://bourbon.io/' alt='Bourbon' target='_blank'>Bourbon</a>.
+</p>
+<p>Before this class, I had never heard of Haml.  Haml essentially replaced the need for opening and closing tags with the "%" sign and handles nesting with strict indentation.  There are a few nifty shortcuts in Haml, like not having to declare a < div > element, and even stuff like <code>!!! 5</code> instead of <code>< !DOCTYPE html ></code>.  But for me, the one thing that makes haml attractive is that after all the processing magic happens, your html will be perfectly indented.  I imagine those that are OCD about code cleanliness would enjoy using haml.  My second favorite thing about using haml is that I don't have to worry about closing all my tags.  Especially as a newbie, I was spending a lot of time debugging my code, realizing that it was just because I lost my closing < /div> tag.  I suspect that people don't go as crazy for haml as other preprocessors because html is usually more straightforward and the amount of time you save isn't as much compared to Sass. Still, I have a feeling I'll be using haml for future proejcts.</p>
+
+<p>SASS? SCSS? LESS?? WTHIT??? (What the heck is this???) I had heard of all of these prior to the class, but I was bewildered about what they were, what they did, how they were different and why I should care.  Thankfully, the mystery is over.  These preprocessors turn data into CSS.  That's about it.  Personally, I wasn't really bothered by the brackets and semicolons in CSS.  I got used to them and they got used to me.  So why need a preprocessor for CSS? To me, the main reasons are to minimize repetition, aid maintainability and give us even more power over what content looks like. </p>
+
+<p>For example, using '@extends' and '@mixins' allows us to declare styles once, and reuse them later.  This also helps maintainability. If I say on Monday, 'The box shadow for all my buttons should be green' but inevitably change my mind and prefer the blue color of my Honda Civic, I don't have to update all my button classes, I can just update the @mixin I used. None of this '-webkit-box-shadow' '-moz-box-shadow' blah blah blah nonesense. Less lines of CSS to type, less to update.  Yipee Kai Yay.</p>
+
+<p>One of the most intriguing things about SASS is it's ability to handle variables, functions, for loops and other things that make it way more dynamic. Colors can be automatically calulated from hex to RGB, converted into its complimentary color, lightened, darkened, mixed, faded ... lions and tigers and bears oh my!  There's are so many possiblities with color.  Folks with a passion for color theory and like designing in the browser would really get a kick out of this kind of power.  I'm so glad I found <a href="http://sassme.arc90.com/" alt='SassMe website' title='SassMe' target='_blank'>SassMe</a> - a way to "visualize SASS color functions in real-time without compiling."" It's pretty nifty for understanding how color alterations in SASS works, getting the values you want and pasting them right into your code. Fun! </p>
+
+<p>Final note:  One of my favorite things about preprocessors that wasn't mentioned in the class is that if you make a syntax error, it won't just pout and not compile.  It tells you WHY it's not compiling and exactly where to fix your mistake.  This is HUGE.  Another reason why preprocessors are great.</p>
+
+<p>Tags, semicolons and brackets were once the bain of my existance.  Only when I started practicing a lot in a text editor did I get used to the syntax and organization of HTML and CSS.  And now with preprocessors, it's like I don't need to worry so much about it.</p>
+
+
+
+</div>
+
+
 <!-- week4 homework -->
 <h3 class = "homework-title">Responsive Web Design</h3>
 <p>Star Date: May 3, 2013 (SL04)</p>
 <div class="post-text">
-<p>RWD still seems like a buzzword in web development, but when you think about how many new ways we consume news and media now compared to 10 years ago, it's a good idea to understand the tech that's responsible and keep up with the changes.</p>
+<p>RWD still seems like a buzzword in web development, but when you think about how many new ways we consume news and media compared to 10 years ago, it's a good idea to understand the tech that's responsible and keep up with the changes.</p>
 
 <p>Here are some of the main takeaways from this weeks lesson:</p>
 
 <ol>
-<li>When designing a site to be responsive, it's smarter to <strong>design</strong> for content, not devices.  New screen sizes and improved retina displays are just a few examples of things that are constantly changing, so if you're designing strictly for those things, it will be like trying design fancy clotes for a growing 2 year old.</li>
+<li>When designing a site to be responsive, it's smarter to <strong>design</strong> for content, not devices.  New screen sizes and improved retina displays are just a few examples of things that are constantly changing, so if you're designing strictly for those things, it will be like trying design fancy clothes for a growing 2 year old.</li>
 <li>Running this JavaScript function in web browser developer tools will tell you the size of your window.</br>
 <code>window.outerWidth</code></br>
-But apparently there's a web-kit but that confuses the scrollbar as part of the window sometimes, so it might be a few pixels off.  Still - it was cool to start running commands in the Google Chrome console.
+But apparently there's a web-kit bug that confuses the scrollbar as part of the window sometimes, so it might be a few pixels off.  Still - it was cool to start running commands in the Google Chrome console.
 My TA Dan Kim told us about a Chrome extension called <a href="https://chrome.google.com/webstore/detail/windowresizer/kkelicaakdanhinjdeammmilcgefonfh"
 alt="Window Resizer" target="_blank">Window Resizer</a>. It not only allows you to snap to specific common sizes, but also tells you your window size in the lower right hand corner as you resize your window.  Thanks, Dan!
 </li>
@@ -179,7 +202,7 @@ alt="Window Resizer" target="_blank">Window Resizer</a>. It not only allows you 
 
 <!-- homework -->
 
-          </div><!--span6-->
+          </div><!--span7-->
 
 
           <div class="span5">
