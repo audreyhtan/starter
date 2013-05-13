@@ -138,8 +138,7 @@ h4.welcome {
 }
 
 .container-middle {
-  margin: 0 auto;
-  max-width: 95%;
+  margin: 7%;
 }
 .container-middle-home .span5 h4,
 .container-middle-home .span5 .social {
