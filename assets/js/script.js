@@ -1,5 +1,6 @@
 $(document).ready(function(event){
 
+// Camera Toggle
   $('.btn').click(function(){
     $('img').toggle();
     $(this).text(function(i, text){
@@ -8,6 +9,8 @@ $(document).ready(function(event){
     $(this).toggleClass('warn');
   });
 
+
+// Tooltips
   $('.close').click(function(){
     $(this).parent().fadeOut('slow', function(event){
       $(this).remove();
