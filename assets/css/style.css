@@ -1,3 +1,5 @@
+
+
 .center-head {
 	margin-top: 50px;
 	margin-bottom: 30px;
@@ -9,8 +11,6 @@
 .titlenav {
   margin: 0 auto;
   text-align: center;
-  /*width: 52%;*/
-  /*border: 3px solid green;*/
 }
 
 .center-head h1 {
@@ -77,7 +77,6 @@
   padding-left: 5px;
 }
 
-
 .navbar-inner {
 	min-height: 40px;
 	padding-right: 20px;
@@ -92,7 +91,6 @@
 	border-top: 1px solid #efefef;
 	border-bottom: 1px solid #efefef;
 }
-
 
 .container-middle {
   margin: 0 auto;
@@ -124,6 +122,8 @@ h4.welcome {
 .container-middle-home .span5 .social {
  margin: 10px 1.4285714285714px;
 }
+
+.span8,
 .span7,
 .span6,
 .span5,
@@ -636,3 +636,136 @@ p.photo_container a:hover span {
 p.photo_container img {
   /*border:1px solid gray;*/
 }
+
+/*Resume Page*/
+.date-ranges,
+h2.work-experience,
+h2.skills,
+h2.education,
+h3.job-employer,
+h4.job-location,
+h5.job-title,
+h4.headline,
+h3.homework-title {
+  font-family: 'Open Sans', Helvetica, Sans-Serif;
+}
+
+h2.work-experience,
+h2.skills,
+h2.education {
+  /*font-size: 14px;*/
+  font-size: 1.7em;
+}
+
+
+#resumetitle {
+  font-family:'Italianno', cursive;
+  font-size: 3em;
+}
+
+#main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 15px;
+}
+
+#main .span4 {
+  margin-left: 0px;
+}
+
+
+@media (min-width: 500px){
+
+#resumetitle {
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 5em;
+  border-bottom: 3px double;
+}
+
+.date-ranges {
+  border-radius: 3px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 16%;
+  float: left;
+  transition: all .9s ease;
+    -o-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -webkit-transition: all .9s ease;
+}
+
+article {
+  padding: 15px;
+}
+
+article:hover {
+  /*border: 2px solid blue;*/
+  background-color: #efefef;
+  border-radius: 10px;
+}
+
+article hgroup {
+  float: right;
+  width: 70%;
+}
+
+article:before,
+article:after {
+  content: "";
+  display: table;
+}
+article:after {
+  clear: both;
+}
+article {
+  *zoom: 1;
+}
+.job-start,
+.job-end {
+  text-align: right;
+  float: left;
+}
+.container-resume {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888;
+  box-shadow: 0 0 5px #888;
+}
+
+#main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding-top: 50px;
+}
+
+#main .span4 {
+margin-top: 15px;
+}
+
+.span8 section {
+  padding-right: 50px;
+}
+
+.span12 .social {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 3px double;
+}
+
+}
+
+.job-start, .job-end {
+clear: left;
+width: 100%;
+}
+
+.span12 article {
+float: left;
+clear: left;
+margin-bottom: 1em;
+}
+
