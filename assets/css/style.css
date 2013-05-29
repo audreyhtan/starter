@@ -777,6 +777,7 @@ margin-bottom: 1em;
    -ms-perspective: 1000;
    -o-perspective: 1000;
    margin: 0 0 20px 0;
+   display: inline-block;
 }
 
 .card {
@@ -793,7 +794,23 @@ margin-bottom: 1em;
    -o-transition: 0.5s;
 }
 
-.wrapper:hover .card {
+.card-fam {
+   width: 135px;
+   height: 180px;
+   position: relative;
+   -webkit-transform-style: preserve-3d;
+   -webkit-transition: 0.5s;
+   -moz-transform-style: preserve-3d;
+   -moz-transition: 0.5s;
+   -ms-transform-style: preserve-3d;
+   -ms-transition: 0.5s;
+   -o-transform-style: preserve-3d;
+   -o-transition: 0.5s;
+}
+
+
+.wrapper:hover .card,
+.wrapper:hover .card-fam {
    -webkit-transform: rotateY(180deg);
    -moz-transform: rotateY(180deg);
    -ms-transform: rotateY(180deg);
@@ -830,6 +847,15 @@ margin-bottom: 1em;
    -o-transform: rotateY(180deg);
 }
 
+/*family-animate*/
+.back-fam {
+    background-image: url(../img/vichy.png);
+   -webkit-transform: rotateY(180deg);
+   -moz-transform: rotateY(180deg);
+   -ms-transform: rotateY(180deg);
+   -o-transform: rotateY(180deg);
+}
+
 .wrapper:hover .front {
    z-index: 0;
 }
@@ -841,6 +867,15 @@ margin-bottom: 1em;
 
 .face ul li{
   padding-top: 15px;
+}
+
+.face.back-fam ul {
+  margin: 10px;
+  padding: 0px;
+}
+
+.face.back-fam ul li {
+  padding-top: 0px;
 }
 
 
