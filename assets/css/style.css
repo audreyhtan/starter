@@ -663,6 +663,15 @@ h2.education {
   font-size: 3em;
 }
 
+#resumetitle a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+#resumetitle a:hover {
+  color: #c03030;
+}
+
 #main {
   margin: 0 auto;
   max-width: 800px;
@@ -670,7 +679,7 @@ h2.education {
 }
 
 #main .span4 {
-  margin-left: 0px;
+  /*margin-left: 0px;*/
 }
 
 
@@ -700,8 +709,8 @@ article {
 }
 
 article:hover {
-  background-color: #efefef;
-  border-radius: 10px;
+  background-color: #f2f2f2;
+  /*border-radius: 10px;*/
 }
 
 article hgroup {
@@ -750,10 +759,10 @@ margin-top: 15px;
 }
 
 .span12 .social {
+  margin-top: 30px;
   text-align: center;
   padding-top: 30px;
   border-top: 3px double;
-}
 
 }
 
