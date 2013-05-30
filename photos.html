@@ -8,10 +8,12 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
   </head>
   <body>
 
-    <div class="container-a-fluid">
+    <div class="container-a">
       <header class="center-head">
         <div class="titlenav">
           <h1>Read Audrey</h1>
@@ -28,48 +30,71 @@
         </div>
       </header>
 
-        <div class="firstrow row-a-fluid">
-            <div class="spad-1a-fluid">
-              <img src="assets/img/horse-hawaii.jpg">
+        <div class="firstrow row-a">
+            <div class="spad-1a">
+              <a class="fancybox" rel="gallery" href="assets/img/horse-hawaii_o.jpg" title="Horseback in Hawaii.  Rode with 3 little Japanese brothers, bowl haircuts in all.">
+              <img src="assets/img/horse-hawaii.jpg"></a>
             </div>
-            <div class="spad-1a-fluid">
-              <img src="assets/img/centralpark-zoo.jpg">
+            <div class="spad-1a">
+              <a class="fancybox" rel="gallery" href="assets/img/centralpark-zoo_o.jpg" title="Central Park Zoo in the fall.  Bright colors, animals and families.  How can you go wrong?">
+                <img src="assets/img/centralpark-zoo.jpg">
+              </a>
             </div>
-            <div class="spad-1a-fluid">
-              <img src="assets/img/hope-bday.jpg">
+            <div class="spad-1a">
+              <a class="fancybox" rel="gallery" href="assets/img/hope-bday_o.jpg" title="Hope's big first birthday bash">
+                <img src="assets/img/hope-bday.jpg">
+              </a>
             </div>
-            <div class="spad-2a-fluid">
-              <img src="assets/img/tulips.jpg">
+            <div class="spad-2a">
+              <a href="assets/img/tulips_o.jpg" class="fancybox" rel="gallery" title="Tulips in one of the many gardens in California while visiting my brother.">
+                <img src="assets/img/tulips.jpg">
+              </a>
             </div>
-            <div class="spad-1a-fluid">
-              <img src="assets/img/elephant-triple.jpg">
+            <div class="spad-1a">
+              <a href="assets/img/elephant-triple_o.jpg" class="fancybox" rel="gallery" title="Riding Sumsi in Chiang Mei Thailand">
+                <img src="assets/img/elephant-triple.jpg">
+              </a>
             </div>
         </div><!--row-->
 
-        <div class="secondrow row-a-fluid">
-            <div class="spad-4a-fluid">
-              <img src="assets/img/cairns-blue.jpg">
+        <div class="secondrow row-a">
+            <div class="spad-4a">
+              <a href="assets/img/cairns-blue.jpg" class="fancybox" rel="gallery" title="Cairns Australia - home of the Great Barrier Reef.  First time scuba diving!">
+                <img src="assets/img/cairns-blue.jpg">
+              </a>
             </div>
-           <div class="spad-2a-fluid">
-              <img src="assets/img/color-lights.jpg">
+           <div class="spad-2a">
+              <a href="assets/img/color-lights_o.jpg" class="fancybox" rel="gallery" title="Pretty colored lights from the street market in Thailand">
+                <img src="assets/img/color-lights.jpg">
+              </a>
             </div>
         </div><!--row-->
 
-        <div class="thirdrow row-a-fluid">
-            <div class="spad-1a-fluid">
-              <img src="assets/img/nayeli-xmas.jpg">
+        <div class="thirdrow row-a">
+            <div class="spad-1a">
+              <a href="assets/img/nayeli-xmas_o.jpg" class="fancybox" rel="gallery" title="Visiting my niece Nayeli at Christmas time.  What a doll.">
+                <img src="assets/img/nayeli-xmas.jpg">
+              </a>
             </div>
-            <div class="spad-2a-fluid">
-              <img src="assets/img/korean-spread.jpg">
+            <div class="spad-2a">
+              <a href="assets/img/korean-spread_o.jpg" class="fancybox" rel="gallery" title="By far my favorite food group - straight up Korean.">
+                <img src="assets/img/korean-spread.jpg">
+              </a>
             </div>
-            <div class="spad-1a-fluid">
-              <img src="assets/img/blossom-tall.jpg">
+            <div class="spad-1a">
+              <a href="assets/img/blossom-tall_o.jpg" class="fancybox" rel="gallery" title="Springtime blossoms from the Brooklyn Botanic Garden">
+                <img src="assets/img/blossom-tall.jpg">
+              </a>
             </div>
-            <div class="spad-1a-fluid">
-              <img src="assets/img/tapas.jpg">
+            <div class="spad-1a">
+              <a href="assets/img/tapas_o.jpg" class="fancybox" rel="gallery" title="Eating good food with good friends feeds me in so many ways.">
+                <img src="assets/img/tapas.jpg">
+              </a>
             </div>
-            <div class="spad-1a-fluid">
-              <img src="assets/img/bulldog-cross.jpg">
+            <div class="spad-1a">
+              <a href="assets/img/bulldog-cross_o.jpg" class="fancybox" rel="gallery" title="Two things I love: 1. dressing up and 2. dogs with personalitiy!">
+                <img src="assets/img/bulldog-cross.jpg">
+              </a>
             </div>
         </div><!--row-->
 
@@ -81,19 +106,27 @@
     </div>
 
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-</html>
+    <script src="assets/js/bootstrap.min.js"></script>
 
+    <script type="text/javascript" src="assets/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 
+    <script type="text/javascript" src="assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
+    <script type="text/javascript" src="assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
 
+    <script src="assets/js/script.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".fancybox").fancybox();
+        $(".fancybox").fancybox({
+          padding : 0,
+          helpers : {
+              title: {
+                  type: 'over'
+              }
+          }
+        });
+      });
+    </script>
 
-
-    </div>
-
-
-
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

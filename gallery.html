@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Read Audrey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="assets/AD_Gallery_1.2.7/lib/jquery.ad-gallery.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/AD_Gallery_1.2.7/lib/jquery.ad-gallery.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      $('img.image1').data('ad-desc', 'Whoa! This description is set through elm.data("ad-desc") instead of using the longdesc attribute.<br>And it contains <strong>H</strong>ow <strong>T</strong>o <strong>M</strong>eet <strong>L</strong>adies... <em>What?</em> That aint what HTML stands for? Man...');
+      $('img.image1').data('ad-title', 'Title through $.data');
+      $('img.image4').data('ad-desc', 'This image is wider than the wrapper, so it has been scaled down');
+      $('img.image5').data('ad-desc', 'This image is higher than the wrapper, so it has been scaled down');
+      var galleries = $('.ad-gallery').adGallery();
+      $('#switch-effect').change(
+        function() {
+          galleries[0].settings.effect = $(this).val();
+          return false;
+        }
+      );
+      $('#toggle-slideshow').click(
+        function() {
+          galleries[0].slideshow.toggle();
+          return false;
+        }
+      );
+      galleries[0].addAnimation('wild',
+        function(img_container, direction, desc) {
+          var current_left = parseInt(img_container.css('left'), 10);
+          var current_top = parseInt(img_container.css('top'), 10);
+          if(direction == 'left') {
+            var old_image_left = '-'+ this.image_wrapper_width +'px';
+            img_container.css('left',this.image_wrapper_width +'px');
+            var old_image_top = '-'+ this.image_wrapper_height +'px';
+            img_container.css('top', this.image_wrapper_height +'px');
+          } else {
+            var old_image_left = this.image_wrapper_width +'px';
+            img_container.css('left','-'+ this.image_wrapper_width +'px');
+            var old_image_top = this.image_wrapper_height +'px';
+            img_container.css('top', '-'+ this.image_wrapper_height +'px');
+          };
+          if(desc) {
+            desc.css('bottom', '-'+ desc[0].offsetHeight +'px');
+            desc.animate({bottom: 0}, this.settings.animation_speed * 2);
+          };
+          img_container.css('opacity', 0);
+          return {old_image: {left: old_image_left, top: old_image_top, opacity: 0},
+                  new_image: {left: current_left, top: current_top, opacity: 1},
+                  easing: 'easeInBounce',
+                  speed: 2500};
+        }
+      );
+    });
+    function debug(str) {
+      if(window.console && window.console.log && jQuery.browser.mozilla) {
+        console.log(str);
+      } else {
+        $('#debug').show().val($('#debug').val() + str +'\n');
+      }
+    }
+    </script>
+
+  <style type="text/css">
+  * {
+    color: #333;
+    line-height: 140%;
+  }
+  select, input, textarea {
+    font-size: 1em;
+  }
+
+  body {
+    font-size: 70%;
+  }
+
+  #gallery {
+    padding: 30px;
+    /*background: #e1eef5;*/
+  }
+  #descriptions {
+    position: relative;
+    height: 50px;
+    background: #EEE;
+    margin-top: 10px;
+    width: 640px;
+    padding: 10px;
+    overflow: hidden;
+  }
+    #descriptions .ad-image-description {
+      position: absolute;
+    }
+      #descriptions .ad-image-description .ad-description-title {
+        display: block;
+      }
+  </style>
+</head>
+<body>
+  <div id="container-a">
+    <header class="center-head">
+      <div class="titlenav">
+        <h1>Read Audrey</h1>
+        <h4>A lady in progress</h4>
+        <div class="navbar-a">
+          <ul class="navbar-b group">
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experiments.html">Experiments</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="family.html">Family</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+
+
+
+    <div id="gallery" class="ad-gallery">
+      <div class="ad-image-wrapper">
+      </div>
+      <div class="ad-controls">
+      </div>
+      <div class="ad-nav">
+        <div class="ad-thumbs">
+          <ul class="ad-thumb-list">
+            <li>
+              <a href="assets/AD_Gallery_1.2.7/example/images/1.jpg">
+                <img src="assets/AD_Gallery_1.2.7/example/images/thumbs/t1.jpg" class="image0">
+              </a>
+            </li>
+            <li>
+              <a href="assets/AD_Gallery_1.2.7/example/images/10.jpg">
+                <img src="assets/AD_Gallery_1.2.7/example/images/thumbs/t10.jpg" title="A title for 10.jpg" alt="This is a nice, and incredibly descriptive, description of the image 10.jpg" class="image1">
+              </a>
+            </li>
+            <li>
+              <a href="assets/AD_Gallery_1.2.7/example/images/11.jpg">
+                <img src="assets/AD_Gallery_1.2.7/example/images/thumbs/t11.jpg" title="A title for 11.jpg" longdesc="http://coffeescripter.com" alt="This is a nice, and incredibly descriptive, description of the image 11.jpg" class="image2">
+              </a>
+            </li>
+            <li>
+              <a href="assets/AD_Gallery_1.2.7/example/images/12.jpg">
+                <img src="assets/AD_Gallery_1.2.7/example/images/thumbs/t12.jpg" title="A title for 12.jpg" alt="This is a nice, and incredibly descriptive, description of the image 12.jpg" class="image3">
+              </a>
+            </li>
+            <li>
+              <a href="assets/AD_Gallery_1.2.7/example/images/13.jpg">
+                <img src="assets/AD_Gallery_1.2.7/example/images/thumbs/t13.jpg" title="A title for 13.jpg" alt="This is a nice, and incredibly descriptive, description of the image 13.jpg" class="image4">
+              </a>
+            </li>
+            <li>
+              <a href="assets/AD_Gallery_1.2.7/example/images/14.jpg">
+                <img src="assets/AD_Gallery_1.2.7/example/images/thumbs/t14.jpg" title="A title for 14.jpg" alt="This is a nice, and incredibly descriptive, description of the image 14.jpg" class="image5">
+              </a>
+            </li>
+            <li>
+              <a href="assets/AD_Gallery_1.2.7/example/images/2.jpg" id="t2">
+                <img src="assets/AD_Gallery_1.2.7/example/images/thumbs/t2.jpg" title="A title for 2.jpg" alt="This is a nice, and incredibly descriptive, description of the image 2.jpg" class="image6">
+              </a>
+            </li>
+            <li>
+              <a href="assets/AD_Gallery_1.2.7/example/images/3.jpg">
+                <img src="assets/AD_Gallery_1.2.7/example/images/thumbs/t3.jpg" title="A title for 3.jpg" alt="This is a nice, and incredibly descriptive, description of the image 3.jpg" class="image7">
+              </a>
+            </li>
+            <li>
+              <a href="assets/AD_Gallery_1.2.7/example/images/4.jpg">
+                <img src="assets/AD_Gallery_1.2.7/example/images/thumbs/t4.jpg" title="A title for 4.jpg" alt="This is a nice, and incredibly descriptive, description of the image 4.jpg" class="image8">
+              </a>
+            </li>
+            <li>
+              <a href="assets/AD_Gallery_1.2.7/example/images/5.jpg">
+                <img src="assets/AD_Gallery_1.2.7/example/images/thumbs/t5.jpg" title="A title for 5.jpg" alt="This is a nice, and incredibly descriptive, description of the image 5.jpg" class="image9">
+              </a>
+            </li>
+            <li>
+              <a href="assets/AD_Gallery_1.2.7/example/images/6.jpg">
+                <img src="assets/AD_Gallery_1.2.7/example/images/thumbs/t6.jpg" title="A title for 6.jpg" alt="This is a nice, and incredibly descriptive, description of the image 6.jpg" class="image10">
+              </a>
+            </li>
+            <!--<li>
+              <a href="assets/AD_Gallery_1.2.7/example/images/7.jpg">
+                <img src="images/thumbs/t7.jpg" title="A title for 7.jpg" alt="This is a nice, and incredibly descriptive, description of the image 7.jpg" class="image11">
+              </a>
+            </li>
+            <li>
+              <a href="assets/AD_Gallery_1.2.7/example/images/8.jpg">
+                <img src="assets/AD_Gallery_1.2.7/example/images/thumbs/t8.jpg" title="A title for 8.jpg" alt="This is a nice, and incredibly descriptive, description of the image 8.jpg" class="image12">
+              </a>
+            </li>
+            <li>
+              <a href="assets/AD_Gallery_1.2.7/example/images/9.jpg">
+                <img src="images/thumbs/t9.jpg" title="A title for 9.jpg" alt="This is a nice, and incredibly descriptive, description of the image 9.jpg" class="image13">
+              </a>
+            </li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!--    <div id="descriptions">
+
+    </div> -->
+    <footer class="bottom">
+               <p> &copy Copyright Audreyhtan.com - All rights reserved. </p>
+        </footer>
+</body>
+</html>

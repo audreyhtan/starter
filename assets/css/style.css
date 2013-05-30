@@ -1,3 +1,5 @@
+
+
 .center-head {
 	margin-top: 50px;
 	margin-bottom: 30px;
@@ -9,8 +11,6 @@
 .titlenav {
   margin: 0 auto;
   text-align: center;
-  /*width: 52%;*/
-  /*border: 3px solid green;*/
 }
 
 .center-head h1 {
@@ -77,7 +77,6 @@
   padding-left: 5px;
 }
 
-
 .navbar-inner {
 	min-height: 40px;
 	padding-right: 20px;
@@ -92,7 +91,6 @@
 	border-top: 1px solid #efefef;
 	border-bottom: 1px solid #efefef;
 }
-
 
 .container-middle {
   margin: 0 auto;
@@ -122,32 +120,44 @@ h4.welcome {
 }
 .container-middle-home .span5 h4,
 .container-middle-home .span5 .social {
- margin-left: 20px;
-}
+ margin: 10px 1.4285714285714px;
 }
 
+.span8,
+.span7,
+.span6,
+.span5,
+.span4 {
+  min-width: 97.1428571428571%;
+}
+}
 
 @media (max-width: 500px) {
  .navbar-a li a {
-  padding: 10px 25px 10px 0px;
+  padding: 10px 10px 10px 10px;
 }
 
 .container-middle {
-  margin: 0 auto;
-  max-width: 80%;
+  margin: 7%;
 }
 .container-middle-home .span5 h4,
 .container-middle-home .span5 .social {
- margin-left: 10px;
+ margin-left: 1.4285714285714%;
+ margin-right: 1.4285714285714%
 }
 .span7,
 .span6,
 .span5,
 .span4 {
-  min-width: 100%;
+  min-width: 97.1428571428571%;
 }
+.row-fluid .span7 {
+  width: 100%;
+  *width: 100%;
 }
 
+
+}
 
 .social {
 	margin-top: 50px;
@@ -239,6 +249,12 @@ li {
   padding-right: 30px;
 }
 
+@media (max-width: 500px) {
+  .post-text {
+    padding-right: 0px;
+    }
+}
+
 .post-text p:nth-of-type(n+2) {
   text-indent: 10%;
 }
@@ -302,6 +318,64 @@ li {
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);*/
 }
 
+.toggle {
+  /*text-align: center;*/
+  position: relative;
+}
+
+.camera-1,
+.camera-2 {
+  display: inline-block;
+  padding-bottom: 10px;
+  border-radius: 100%;
+}
+
+.wayne {
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.camera {
+  width: 93%;
+}
+
+.btn.btn-info.camera.warn {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #faa732;
+  *background-color: #f89406;
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  border-color: #f89406 #f89406 #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+
+.btn-info {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  *background-color: #2f96b4;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+
+
 /*Photo pages for practicing floats*/
 .row-a {
   margin-left: -20px;
@@ -353,12 +427,8 @@ li {
   padding-right: 20px;
   padding-left: 20px;
   *zoom: 1;
-}
-
-.container-a {
   margin-right: auto;
   margin-left: auto;
-  *zoom: 1;
   position: relative;
 }
 
@@ -402,14 +472,8 @@ li {
 
 .container-a-fluid {
   max-width: 960px;
-  /*padding-right: 20px;
-  padding-left: 20px;*/
   *zoom: 1;
-}
-
-.container-a-fluid {
   margin: 0 auto;
-  *zoom: 1;
 }
 
 .container-a-fluid:before,
@@ -458,18 +522,6 @@ li {
 .firstrow .spad-1a-fluid,
 .thirdrow .spad-1a-fluid {
   width: 33.3333333333333%;  /* 1/three columns*/
-}
-
-.firstrow img {
-  height: 200px;
-}
-
-.secondrow img {
-  height: 350px;
-}
-
-.thirdrow img {
-  height: 300px;
 }
 } /*media query*/
 
@@ -584,3 +636,257 @@ p.photo_container a:hover span {
 p.photo_container img {
   /*border:1px solid gray;*/
 }
+
+/*Resume Page*/
+.date-ranges,
+h2.work-experience,
+h2.skills,
+h2.education,
+h3.job-employer,
+h4.job-location,
+h5.job-title,
+h4.headline,
+h3.homework-title {
+  font-family: 'Open Sans', Helvetica, Sans-Serif;
+}
+
+h2.work-experience,
+h2.skills,
+h2.education {
+  /*font-size: 14px;*/
+  font-size: 1.7em;
+}
+
+
+#resumetitle {
+  font-family:'Italianno', cursive;
+  font-size: 3em;
+}
+
+#resumetitle a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+#resumetitle a:hover {
+  color: #c03030;
+}
+
+#main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 15px;
+}
+
+#main .span4 {
+  /*margin-left: 0px;*/
+}
+
+
+@media (min-width: 500px){
+
+#resumetitle {
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 5em;
+  border-bottom: 3px double;
+}
+
+.date-ranges {
+  border-radius: 3px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 16%;
+  float: left;
+}
+
+article {
+  padding: 15px;
+  transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+
+article:hover {
+  background-color: #f2f2f2;
+  /*border-radius: 10px;*/
+}
+
+article hgroup {
+  float: right;
+  width: 75%;
+}
+
+article:before,
+article:after {
+  content: "";
+  display: table;
+}
+article:after {
+  clear: both;
+}
+article {
+  *zoom: 1;
+}
+.job-start,
+.job-end {
+  text-align: right;
+  float: left;
+}
+.container-resume {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888;
+  box-shadow: 0 0 5px #888;
+}
+
+#main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding-top: 50px;
+}
+
+#main .span4 {
+margin-top: 15px;
+}
+
+.span8 section {
+  padding-right: 50px;
+}
+
+.span12 .social {
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 30px;
+  border-top: 3px double;
+
+}
+
+.job-start, .job-end {
+clear: left;
+width: 100%;
+}
+
+.span12 article {
+float: left;
+clear: left;
+margin-bottom: 1em;
+}
+
+/*Transforms*/
+.wrapper {
+   position: relative;
+   -webkit-perspective: 1000;
+   -moz-perspective: 1000;
+   -ms-perspective: 1000;
+   -o-perspective: 1000;
+   margin: 0 0 20px 0;
+   display: inline-block;
+}
+
+.card {
+   width: 245px;
+   height: 327px;
+   position: relative;
+   -webkit-transform-style: preserve-3d;
+   -webkit-transition: 0.5s;
+   -moz-transform-style: preserve-3d;
+   -moz-transition: 0.5s;
+   -ms-transform-style: preserve-3d;
+   -ms-transition: 0.5s;
+   -o-transform-style: preserve-3d;
+   -o-transition: 0.5s;
+}
+
+.card-fam {
+   width: 135px;
+   height: 180px;
+   position: relative;
+   -webkit-transform-style: preserve-3d;
+   -webkit-transition: 0.5s;
+   -moz-transform-style: preserve-3d;
+   -moz-transition: 0.5s;
+   -ms-transform-style: preserve-3d;
+   -ms-transition: 0.5s;
+   -o-transform-style: preserve-3d;
+   -o-transition: 0.5s;
+}
+
+
+.wrapper:hover .card,
+.wrapper:hover .card-fam {
+   -webkit-transform: rotateY(180deg);
+   -moz-transform: rotateY(180deg);
+   -ms-transform: rotateY(180deg);
+   -o-transform: rotateY(180deg);
+}
+
+.face {
+   position: absolute;
+   -webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+   -ms-backface-visibility: hidden;
+   -o-backface-visibility: hidden;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   line-height: 50px;
+   border-radius: 10px;
+}
+
+.face img {
+  border-radius: 10px;
+}
+
+.front {
+  z-index: 10;
+}
+
+.back {
+  background-image: url(../img/vichy.png);
+   -webkit-transform: rotateY(180deg);
+   -moz-transform: rotateY(180deg);
+   -ms-transform: rotateY(180deg);
+   -o-transform: rotateY(180deg);
+}
+
+/*family-animate*/
+.back-fam {
+    background-image: url(../img/vichy.png);
+   -webkit-transform: rotateY(180deg);
+   -moz-transform: rotateY(180deg);
+   -ms-transform: rotateY(180deg);
+   -o-transform: rotateY(180deg);
+}
+
+.wrapper:hover .front {
+   z-index: 0;
+}
+
+.face ul {
+  list-style-type: none;
+  padding: 30px 10px 10px 10px;
+}
+
+.face ul li{
+  padding-top: 15px;
+}
+
+.face.back-fam ul {
+  margin: 10px;
+  padding: 0px;
+}
+
+.face.back-fam ul li {
+  padding-top: 0px;
+}
+
+
+
+
+
