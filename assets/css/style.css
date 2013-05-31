@@ -659,8 +659,15 @@ h2.education {
 
 
 #resumetitle {
-  font-family:'Italianno', cursive;
-  font-size: 3em;
+  font-family: 'Georgia', Times;
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: .5em;
+  margin: .5em auto;
+  border-bottom: 3px double;
+  text-transform: uppercase;
 }
 
 #resumetitle a {
@@ -678,18 +685,14 @@ h2.education {
   padding: 15px;
 }
 
-#main .span4 {
-  /*margin-left: 0px;*/
-}
-
 
 @media (min-width: 500px){
 
 #resumetitle {
-  padding-bottom: 30px;
-  text-align: center;
-  font-size: 5em;
-  border-bottom: 3px double;
+  padding-bottom: 40px;
+  font-size: 4em;
+  margin: .25 auto;
+  letter-spacing: 10px;
 }
 
 .date-ranges {
