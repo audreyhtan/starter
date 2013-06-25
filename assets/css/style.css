@@ -782,6 +782,7 @@ float: left;
 clear: left;
 margin-bottom: 1em;
 }
+}
 
 /*Transforms*/
 .wrapper {
@@ -891,6 +892,87 @@ margin-bottom: 1em;
 .face.back-fam ul li {
   padding-top: 0px;
 }
+
+.clock-face {
+  background-image: url(../img/clock_face.jpg);
+  height: 450px;
+  width: 100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+@media (max-width: 560px) {
+  .clock-face{
+    background-size: 80% auto;
+    height: 300px;
+  }
+}
+
+.second-hand {
+  z-index: 2;
+  position: relative;
+  top: 59px;
+  left: 219px;
+  -webkit-transform-origin: 51% 95%;
+     -moz-transform-origin: 51% 95%;
+       -o-transform-origin: 51% 95%;
+          transform-origin: 51% 95%;
+  -webkit-animation: tick 60s linear 0s infinite;
+  -moz-animation: tick 60s linear 0s infinite;
+  -o-animation: tick 60s linear 0s infinite;
+  animation: tick 60s linear 0s infinite;
+}
+
+@media (max-width: 560px){
+  .second-hand{
+    top: 35px;
+    left: 125px;
+    height: 30%;
+  }
+}
+
+@-webkit-keyframes tick {
+  0% {
+-webkit-transform: rotate(0deg);
+  }
+  100% {
+-webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes tick {
+  0% {
+  -moz-transform: rotate(0deg);
+  }
+  100% {
+  -moz-transform: rotate(360deg);
+  }
+}
+@-o-keyframes tick {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(360deg);
+
+  }
+}
+@keyframes tick {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.second-hand.paused {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state:paused;
+  animation-play-state: paused;
+}
+
 
 
 
