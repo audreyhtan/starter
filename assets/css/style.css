@@ -899,6 +899,7 @@ margin-bottom: 1em;
   width: 100%;
   background-repeat: no-repeat;
   z-index: 1;
+  position: relative;
 }
 
 @media (max-width: 560px) {
@@ -910,9 +911,9 @@ margin-bottom: 1em;
 
 .second-hand {
   z-index: 2;
-  position: relative;
-  top: 59px;
-  left: 219px;
+  position: absolute;
+  top: 13%;
+  left: 51%;
   -webkit-transform-origin: 51% 95%;
      -moz-transform-origin: 51% 95%;
        -o-transform-origin: 51% 95%;
@@ -971,6 +972,11 @@ margin-bottom: 1em;
   -moz-animation-play-state: paused;
   -o-animation-play-state:paused;
   animation-play-state: paused;
+}
+
+.center {
+  margin: 30px auto;
+  display: block;
 }
 
 
