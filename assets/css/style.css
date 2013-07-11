@@ -995,6 +995,11 @@ margin-bottom: 1em;
   font-weight: 200;
 }
 
+.tedcolor{
+  color: #FF2B06;
+  font-weight: 700;
+}
+
 .ted p {
   text-align: justify;
 }
