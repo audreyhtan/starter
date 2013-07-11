@@ -980,6 +980,58 @@ margin-bottom: 1em;
 }
 
 
+/*TED page*/
+
+.ted {
+  margin-top: -10px;
+}
+
+.ted p,
+.ted h1,
+.ted h2 {
+  font-family: 'Helvetica', arial, sans-serif;
+  font-weight: 200;
+}
+
+.ted p {
+  text-align: justify;
+}
+
+.ted h1 {
+  position: relative;
+  top: 140px;
+  text-align: center;
+}
+
+.ted h2 {
+  position: relative;
+  top: 25px;
+  text-align: center;
+}
+
+.line-pattern {
+  position: relative;
+  background: #fff url(http://www.barrelny.com/wp-content/themes/barrel-2013-theme/im/multi_line_swatch_light.png);
+  background-image: url(http://www.barrelny.com/wp-content/themes/barrel-2013-theme/im/multi_line_swatch_light.svg), none;
+  min-height: 196px;
+  -webkit-box-shadow: inset 0 -10px 10px -10px rgba(0,0,0,.08)
+}
+
+.sq-swatch {
+  height: 90px;
+  background: #f3f3f3 url(http://www.barrelny.com/wp-content/themes/barrel-2013-theme/im/swatch_sq.svg);
+}
+
+.cover {
+  margin: 50px auto;
+  width: 60%;
+  max-width: 700px;
+}
+
+.signature {
+  width: 200px;
+}
+
 
 
 
