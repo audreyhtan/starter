@@ -988,7 +988,9 @@ margin-bottom: 1em;
 
 .ted p,
 .ted h1,
-.ted h2 {
+.ted h2,
+.ted h3,
+.ted h4 {
   font-family: 'Helvetica', arial, sans-serif;
   font-weight: 200;
 }
@@ -1022,7 +1024,9 @@ margin-bottom: 1em;
   background: #f3f3f3 url(http://www.barrelny.com/wp-content/themes/barrel-2013-theme/im/swatch_sq.svg);
 }
 
-.cover {
+.cover,
+.videos,
+.writing {
   margin: 50px auto;
   width: 60%;
   max-width: 700px;
@@ -1032,6 +1036,9 @@ margin-bottom: 1em;
   width: 200px;
 }
 
+.video {
+ margin: 75px 0px;
+}
 
 
 
