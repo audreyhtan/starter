@@ -1,0 +1,313 @@
+p,
+ul,
+li {
+  font: 14px "PT Serif", Georgia, Serif; }
+
+.top {
+  background-color: #c03030;
+  position: relative;
+  top: -11px;
+  left: 0;
+  width: 100%;
+  height: 700px; }
+
+.welcome {
+  position: relative;
+  top: 27%;
+  width: 700px;
+  margin: 0 auto;
+  text-align: center; }
+
+.center-head h1 {
+  font-size: 10em;
+  line-height: 1em;
+  color: black; }
+
+.swork {
+  margin-left: -43px; }
+
+.kwor {
+  margin-left: -45px; }
+
+.of {
+  font-family: "Gentium Book Basic", serif;
+  font-style: italic;
+  color: black;
+  font-size: 1.6em;
+  letter-spacing: 1px; }
+
+.audreyt {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 3em;
+  letter-spacing: 25px;
+  margin-top: 45px;
+  margin-left: 8px;
+  text-transform: uppercase; }
+
+.projects {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+h1.company {
+  font-family: "Georgia", serif;
+  font-weight: 200;
+  letter-spacing: 1px; }
+
+.project {
+  position: relative;
+  height: 200px;
+  width: 297px;
+  display: inline-block;
+  margin-left: 2.1%;
+  margin-bottom: 14px;
+  overflow: hidden;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: -webkit-filter 0.25s ease-in-out; }
+
+a:hover {
+  text-decoration: none; }
+  a:hover .project {
+    -webkit-filter: grayscale(0); }
+  a:hover .project-name {
+    opacity: 1; }
+
+.ep {
+  background-image: url("../img/ep-2.jpg"); }
+
+.waggit {
+  background-image: url("../img/waggit.jpg"); }
+
+.torres {
+  background-image: url("../img/torres.jpg"); }
+
+.gearlance {
+  background-image: url("../img/gearlance.jpg"); }
+
+.homeswap {
+  background-image: url("../img/homeswap.jpg"); }
+
+.assurant {
+  background-image: url("../img/assurant.jpg"); }
+
+.project-name {
+  position: absolute;
+  bottom: 0px;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  font-size: 17.5px;
+  font-family: "Georgia", Times;
+  font-weight: 200;
+  color: #eeeeee;
+  background-color: black;
+  width: 100%;
+  padding: 6px 0 6px 10px; }
+
+.section-head {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  border-top: 1px solid #888888;
+  position: relative;
+  text-align: center; }
+
+section h1.content {
+  text-transform: uppercase;
+  font-family: "Georgia", serif;
+  font-weight: 300;
+  letter-spacing: 15px;
+  position: relative;
+  top: -30px;
+  display: inline-block;
+  background-color: white;
+  padding-left: 35px;
+  padding-right: 20px; }
+
+.top-margin {
+  margin-top: 40px; }
+
+.no-border {
+  border: none; }
+
+.quote {
+  font-family: "Gentium Book Basic", serif-webkit-body;
+  font-style: italic;
+  font-size: 1.75em;
+  letter-spacing: 1px;
+  line-height: 1.2em; }
+
+.amy {
+  line-height: 4em;
+  font-family: "Gentium Book Basic", serif-webkit-body;
+  text-transform: uppercase; }
+
+.center-text {
+  float: none;
+  margin: 0 auto;
+  text-align: center; }
+
+#ep-showcase hr {
+  background: #333333;
+  border: 0;
+  height: 3px;
+  margin: 19px 0 22px 0;
+  width: 100px; }
+
+.description {
+  text-align: justify; }
+
+#ep-showcase {
+  background-color: #efefef; }
+
+.container-middle {
+  margin: 0 auto; }
+  @media (max-width: 700px) {
+    .container-middle {
+      max-width: 85%; } }
+
+.firstrow img {
+  height: 120px;
+  width: 100%;
+  border-bottom: 5px solid white;
+  border-left: 5px solid white; }
+
+.secondrow img {
+  height: 470px;
+  width: 100%;
+  border-bottom: 5px solid white;
+  border-left: 5px solid white; }
+
+.fourthrow img {
+  height: 200px;
+  width: 100%;
+  border-bottom: 10px solid white;
+  border-left: 10px solid white; }
+
+.rel-inlineb, .phil-kids, .al-so, .phil-pam, .audrey, .dad-mom, .grandparents-dad, .grandparents-mom {
+  position: relative;
+  display: inline-block; }
+
+.phil-kids {
+  left: 100px; }
+
+.al-so {
+  left: 10px; }
+
+.phil-pam {
+  left: 120px; }
+
+.audrey {
+  left: 90px; }
+
+.dad-mom {
+  left: 270px; }
+
+.grandparents-dad {
+  left: 75px; }
+
+.grandparents-mom {
+  left: 160px; }
+
+.phil-kids {
+  left: 100px;
+  position: relative;
+  display: inline-block; }
+
+.al-so {
+  left: 10px;
+  position: relative;
+  display: inline-block; }
+
+.phil-pam {
+  left: 120px;
+  position: relative;
+  display: inline-block; }
+
+.audrey {
+  left: 90px;
+  position: relative;
+  display: inline-block; }
+
+.dad-mom {
+  left: 270px;
+  position: relative;
+  display: inline-block; }
+
+.grandparents-dad {
+  left: 75px;
+  position: relative;
+  display: inline-block; }
+
+.grandparents-mom {
+  left: 160px;
+  position: relative;
+  display: inline-block; }
+
+.btn {
+  -webkit-box-shadow: 2px 2px 0 white;
+  -moz-box-shadow: 2px 2px 0 white;
+  box-shadow: 2px 2px 0 white; }
+
+.temp {
+  background-color: red; }
+
+.item-1 {
+  width: 2em; }
+
+.item-2 {
+  width: 4em; }
+
+.item-3 {
+  width: 6em; }
+
+.item-4 {
+  width: 8em; }
+
+.item-5 {
+  width: 10em; }
+
+.item-6 {
+  width: 12em; }
+
+.fb-icon {
+  background-image: url("/images/fb.png");
+  background-size: 55%; }
+
+.twttr-icon {
+  background-image: url("/images/twttr.png");
+  background-size: 55%; }
+
+.lnkdn-icon {
+  background-image: url("/images/lnkdn.png");
+  background-size: 55%; }
+
+.tmblr-icon {
+  background-image: url("/images/tmblr.png");
+  background-size: 55%; }
+
+.spad-1a {
+  width: 160px;
+  color: rgba(208, 99, 54, 0.25); }
+
+.spad-2a {
+  width: 320px;
+  color: rgba(208, 99, 54, 0.25); }
+
+.spad-3a {
+  width: 480px;
+  color: rgba(208, 99, 54, 0.25); }
+
+.spad-4a {
+  width: 640px;
+  color: rgba(208, 99, 54, 0.25); }
+
+.spad-5a {
+  width: 800px;
+  color: rgba(208, 99, 54, 0.25); }
+
+.spad-6a {
+  width: 960px;
+  color: rgba(208, 99, 54, 0.25); }
+
+.div {
+  background-color: #cccccc; }

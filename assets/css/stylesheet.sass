@@ -1,0 +1,300 @@
+$font-base: 14px
+$serif: 'PT Serif', Georgia, Serif
+
+p,
+ul,
+li,
+  font: $font-base $serif
+
+.top
+  background-color: #c03030
+  position: relative
+  top: -11px
+  left: 0
+  width: 100%
+  height: 700px
+
+.welcome
+  position: relative
+  top: 27%
+  width: 700px
+  margin: 0 auto
+  text-align: center
+  
+.center-head
+  h1  
+    font-size: 10em
+    line-height: 1em
+    color: #000
+
+.swork
+  margin-left: -43px
+
+.kwor
+  margin-left: -45px
+
+.of
+  font-family: 'Gentium Book Basic', serif
+  font-style: italic
+  color: #000
+  font-size: 1.6em
+  letter-spacing: 1px
+
+.audreyt
+  font-family: 'Lato', sans-serif
+  font-weight: 300
+  color: #fff
+  font-size: 3em
+  letter-spacing: 25px
+  margin-top: 45px
+  margin-left: 8px
+  text-transform: uppercase
+
+.projects
+  padding-top: 60px
+  padding-bottom: 60px
+
+h1
+  &.company
+    font-family: 'Georgia', serif
+    font-weight: 200
+    letter-spacing: 1px
+
+.project
+  position: relative
+  height: 200px
+  width: 297px
+  display: inline-block
+  margin-left: 2.1%
+  margin-bottom: 14px
+  overflow: hidden
+  -webkit-filter: grayscale(100%)
+  -webkit-transition: -webkit-filter .25s ease-in-out
+
+a
+  &:hover
+    text-decoration: none
+    .project
+      -webkit-filter: grayscale(0)
+    .project-name
+      opacity: 1
+
+.ep
+  background-image: url('../img/ep-2.jpg')
+
+.waggit
+  background-image: url('../img/waggit.jpg')
+
+.torres
+  background-image: url('../img/torres.jpg')
+
+.gearlance
+  background-image: url('../img/gearlance.jpg')
+
+.homeswap
+  background-image: url('../img/homeswap.jpg')
+
+.assurant
+  background-image: url('../img/assurant.jpg')
+
+.project-name
+  position: absolute
+  bottom: 0px
+  opacity: 0
+  -webkit-transition: opacity .25s ease-in-out
+  font-size: 17.5px
+  font-family: 'Georgia', Times
+  font-weight: 200
+  color: #eee
+  background-color: #000
+  width: 100%
+  padding: 6px 0 6px 10px
+
+.section-head
+  margin-top: 70px
+  margin-bottom: 30px
+  border-top: 1px solid #888
+  position: relative
+  text-align: center
+
+section
+  h1
+    &.content
+      text-transform: uppercase
+      font-family: 'Georgia', serif
+      font-weight: 300
+      letter-spacing: 15px
+      position: relative
+      top: -30px
+      display: inline-block
+      background-color: #fff
+      padding-left: 35px
+      padding-right: 20px
+
+.top-margin
+  margin-top: 40px
+
+.no-border
+  border: none
+
+.quote
+  font-family: "Gentium Book Basic", serif-webkit-body
+  font-style: italic
+  font-size: 1.75em
+  letter-spacing: 1px
+  line-height: 1.2em
+
+.amy
+  line-height: 4em
+  font-family: "Gentium Book Basic", serif-webkit-body
+  text-transform: uppercase
+
+.center-text
+  float: none
+  margin: 0 auto
+  text-align: center
+
+#ep-showcase
+  hr
+    background: #333
+    border: 0
+    height: 3px
+    margin: 19px 0 22px 0
+    width: 100px
+
+.description
+  text-align: justify
+
+#ep-showcase
+  background-color: #efefef
+
+.container-middle
+  margin: 0 auto
+  @media (max-width: 700px)
+    max-width: 85%
+
+@mixin photorow($height, $border: 5px)
+  height: $height
+  width: 100%
+  border-bottom: $border solid white
+  border-left: $border solid white
+
+.firstrow img
+  @include photorow(120px)
+
+.secondrow img
+  @include photorow(470px)
+
+.fourthrow img
+  @include photorow(200px, 10px)
+
+.rel-inlineb
+  position: relative
+  display: inline-block
+
+.phil-kids
+  @extend .rel-inlineb
+  left: 100px
+
+.al-so
+  @extend .rel-inlineb
+  left: 10px
+
+.phil-pam
+  @extend .rel-inlineb
+  left: 120px
+
+.audrey
+  @extend .rel-inlineb
+  left: 90px
+
+.dad-mom
+  @extend .rel-inlineb
+  left: 270px
+
+.grandparents-dad
+  @extend .rel-inlineb
+  left: 75px
+
+.grandparents-mom
+  @extend .rel-inlineb
+  left: 160px
+
+@mixin adult($left, $position:relative, $display:inline-block)
+  left: $left
+  position: $position
+  display: $display
+
+.phil-kids
+  @include adult($left:100px)
+
+.al-so
+  @include adult($left:10px)
+
+.phil-pam
+  @include adult($left:120px)
+
+.audrey
+  @include adult($left:90px)
+
+.dad-mom
+  @include adult($left:270px)
+
+.grandparents-dad
+  @include adult($left:75px)
+
+.grandparents-mom
+  @include adult($left:160px)
+
+@mixin boxshadow($shadow: 5px 5px 0 #eee)
+  -webkit-box-shadow: $shadow
+  -moz-box-shadow: $shadow
+  box-shadow: $shadow
+
+.btn
+  @include boxshadow($shadow: 2px 2px 0 #fff)
+
+$temp: 91
+.temp
+  @if $temp >= 90
+    background-color: red
+  @else if $temp >= 70
+    background-color: green
+  @else if $temp >= 32
+    background-color: blue
+  @else
+    background-color: black
+
+@for $i from 1 through 6
+  .item-#{$i}
+    width: 2em * $i
+
+
+$bksz: 55%
+@each $social in fb, twttr, lnkdn, tmblr
+  .#{$social}-icon
+    background-image: url('/images/#{$social}.png')
+    @if $bksz >= 50%
+      background-size: $bksz
+
+$color: #D06336
+@for $i from 1 through 6
+  .spad-#{$i}a
+    width: $i * 160px
+    // color: invert(rgba($green, .25))
+    color: rgba($color, .25)
+
+$color: #333
+.div
+  background-color: invert($color)
+
+
+
+
+
+
+
+
+
+
+
