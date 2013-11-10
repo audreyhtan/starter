@@ -53,7 +53,8 @@ li {
 h1.company {
   font-family: "Georgia", serif;
   font-weight: 200;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  margin-top: 30px; }
 
 .project {
   position: relative;
@@ -64,7 +65,7 @@ h1.company {
   margin-bottom: 14px;
   overflow: hidden;
   -webkit-filter: grayscale(100%);
-  -webkit-transition: -webkit-filter 0.25s ease-in-out; }
+  -webkit-transition: -webkit-filter 0.5s ease-in-out; }
 
 a:hover {
   text-decoration: none; }
@@ -72,6 +73,13 @@ a:hover {
     -webkit-filter: grayscale(0); }
   a:hover .project-name {
     opacity: 1; }
+
+.span8.offset1 a img {
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: -webkit-filter 0.15s ease-in-out; }
+
+.span8.offset1:hover img {
+  -webkit-filter: grayscale(0); }
 
 .ep {
   background-image: url("../img/ep-2.jpg"); }
@@ -146,18 +154,78 @@ section h1.content {
   margin: 0 auto;
   text-align: center; }
 
-#ep-showcase hr {
+.projects hr {
   background: #333333;
   border: 0;
   height: 3px;
   margin: 19px 0 22px 0;
   width: 100px; }
 
+.one-liner {
+  color: #c03030;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  margin: 0 0 10px 0; }
+
 .description {
   text-align: justify; }
 
-#ep-showcase {
+.firstletter {
+  float: left;
+  font-size: 40px;
+  line-height: 33px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px; }
+
+#ep-showcase,
+#torres-showcase,
+#homeswap-showcase {
   background-color: #efefef; }
+
+.inline a {
+  display: inline-block; }
+
+.no-margin {
+  margin-left: 0px; }
+
+[class*="col"] {
+  float: left;
+  min-height: 1px;
+  margin: 0px; }
+
+.col-5 {
+  width: 100%; }
+
+.col-4 {
+  width: 80%; }
+
+.col-3 {
+  width: 60%; }
+
+.col-2 {
+  width: 40%; }
+
+.col-1 {
+  width: 20%; }
+
+.row-a img {
+  border-left: 3px solid white;
+  border-top: 3px solid white; }
+
+.row-a img:last-child {
+  border-right: 3px solid white; }
+
+.row-a:last-child img {
+  border-bottom: 3px solid white; }
+
+.tall img {
+  height: 180px;
+  width: 100%; }
+
+.grande img {
+  height: 470px;
+  width: 100%; }
 
 .container-middle {
   margin: 0 auto; }

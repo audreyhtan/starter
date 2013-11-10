@@ -1,5 +1,8 @@
 $font-base: 14px
 $serif: 'PT Serif', Georgia, Serif
+$img-border: 3px solid white
+$red-color: #c03030
+$sans-serif: 'Lato', sans-serif
 
 p,
 ul,
@@ -7,7 +10,7 @@ li,
   font: $font-base $serif
 
 .top
-  background-color: #c03030
+  background-color: $red-color
   position: relative
   top: -11px
   left: 0
@@ -59,6 +62,7 @@ h1
     font-family: 'Georgia', serif
     font-weight: 200
     letter-spacing: 1px
+    margin-top: 30px
 
 .project
   position: relative
@@ -69,7 +73,7 @@ h1
   margin-bottom: 14px
   overflow: hidden
   -webkit-filter: grayscale(100%)
-  -webkit-transition: -webkit-filter .25s ease-in-out
+  -webkit-transition: -webkit-filter .5s ease-in-out
 
 a
   &:hover
@@ -78,6 +82,17 @@ a
       -webkit-filter: grayscale(0)
     .project-name
       opacity: 1
+
+.span8.offset1
+  a
+    img
+      -webkit-filter: grayscale(100%)
+      -webkit-transition: -webkit-filter .15s ease-in-out
+
+.span8.offset1
+  &:hover
+    img
+      -webkit-filter: grayscale(0)
 
 .ep
   background-image: url('../img/ep-2.jpg')
@@ -154,7 +169,7 @@ section
   margin: 0 auto
   text-align: center
 
-#ep-showcase
+.projects
   hr
     background: #333
     border: 0
@@ -162,11 +177,77 @@ section
     margin: 19px 0 22px 0
     width: 100px
 
+.one-liner
+  color: $red-color
+  font-family: $sans-serif
+  font-weight: 700
+  margin: 0 0 10px 0
+
 .description
   text-align: justify
 
-#ep-showcase
+.firstletter
+  float: left
+  font-size: 40px
+  line-height: 33px
+  padding-top: 4px
+  padding-right: 8px
+  padding-left: 3px
+
+#ep-showcase,
+#torres-showcase,
+#homeswap-showcase
   background-color: #efefef
+
+.inline
+  a
+    display: inline-block
+
+.no-margin
+  margin-left: 0px
+
+[class*="col"]
+  float: left
+  min-height: 1px
+  margin: 0px
+
+.col-5
+  width: 100%
+
+.col-4
+  width: 80%
+
+.col-3
+  width: 60%
+
+.col-2
+  width: 40%
+
+.col-1
+  width: 20%
+
+.row-a
+  img
+    border-left: $img-border
+    border-top: $img-border
+
+.row-a
+  img:last-child
+    border-right: $img-border
+
+.row-a:last-child
+  img
+    border-bottom: $img-border
+
+.tall
+  img
+    height: 180px
+    width: 100%
+
+.grande
+  img
+    height: 470px
+    width: 100%
 
 .container-middle
   margin: 0 auto
