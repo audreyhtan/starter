@@ -14,11 +14,12 @@
     %link(href="http://fonts.googleapis.com/css?family=Italianno" rel='stylesheet' type='text/css')
     %link(rel="icon" href="assets/img/favicon.ico" type="image/x-icon")
     %link(rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon")
+    %link(rel="stylesheet" href="assets/fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen")
+    %link(rel="stylesheet" href="assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen")
     %script
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-41313867-1', 'audreyhtan.com');ga('send', 'pageview');
-    %script
-      src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
-    %script
+    %script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+    :javascript
       $(function() {$('a[href*=#]:not([href=#])').click(function() {if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {var target = $(this.hash);target = target.length ? target : $('[name=' + this.hash.slice(1) +']');if (target.length) {$('html,body').animate({scrollTop: target.offset().top}, 1000);return false;}}});});
   %body
     %section.top
@@ -29,11 +30,12 @@
             k
           %span.swork
             s
-        %p.of
-          of
+        .divide
+          %p.of
+            of
         %h2.audreyt
           Audrey Tan
-    %section.projects
+    %section.projects#select
       .container
         .section-head
           %span.head
@@ -88,20 +90,22 @@
               acon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
             %p.description
               Bacon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
+            %a(href="#select")
+              contents
           .span8.offset1
             .row-a.grande
               .col-5
-                %a(href="assets/img/ep-style.png" class="fancybox" rel="gallery" title="Cairns Australia - home of the Great Barrier Reef.  First time scuba diving!")
+                %a(href="assets/img/ep-style.png" class="fancybox" rel="gallery" title="Custom Style Guide on Twitter Bootstrap 3 (LESS, modular CSS)")
                   %img(src="assets/img/ep-style.png")
             .row-a.tall           
               .col-1
-                %a(href="assets/img/ep-mobile.png" class="fancybox" rel="gallery" title="Visiting my niece Nayeli at Christmas time.  What a doll.")
+                %a(href="assets/img/ep-mobile.png" class="fancybox" rel="gallery" title="Contact Us page on mobile (responsive design, front-end dev, cross-browser testing)")
                   %img(src="assets/img/ep-mobile.png")
               .col-2
-                %a(href="assets/img/ep-pricing.png" class="fancybox" rel="gallery" title="Visiting my niece Nayeli at Christmas time.  What a doll.")
+                %a(href="assets/img/ep-pricing.png" class="fancybox" rel="gallery" title="Pricing Page  (product dev, UX, copywriting, front end dev)")
                   %img(src="assets/img/ep-pricing.png")
               .col-2
-                %a(href="assets/img/ep-clients.jpg" class="fancybox" rel="gallery" title="Visiting my niece Nayeli at Christmas time.  What a doll.")
+                %a(href="assets/img/ep-clients.png" class="fancybox" rel="gallery" title="Clients (Photoshop, web-design)")
                   %img(src="assets/img/ep-clients.png")
     %section.projects#waggit-showcase
       .container
@@ -118,6 +122,8 @@
               acon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
             %p.description
               Bacon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
+            %a(href="#select")
+              contents
           .span8.offset1
             .row-a.grande
               .col-5
@@ -151,6 +157,8 @@
               acon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
             %p.description
               Bacon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
+            %a(href="#select")
+              contents
           .span8.offset1
             .row-a.grande
               .col-5
@@ -181,6 +189,8 @@
               acon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
             %p.description
               Bacon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
+            %a(href="#select")
+              contents
           .span8.offset1
             .row-a.grande
               .col-5
@@ -211,6 +221,8 @@
               acon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
             %p.description
               Bacon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
+            %a(href="#select")
+              contents
           .span8.offset1
             .row-a.grande
               .col-5
@@ -241,6 +253,8 @@
               acon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
             %p.description
               Bacon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
+            %a(href="#select")
+              contents
           .span8.offset1
             .row-a.grande
               .col-5
@@ -256,13 +270,31 @@
               .col-2
                 %a(href="assets/img/assurant-prior.png" class="fancybox" rel="gallery" title="Visiting my niece Nayeli at Christmas time.  What a doll.")
                   %img(src="assets/img/assurant-prior.png")
-              
-  
+    %section#about-audrey
+      .container
+        .row
+          .span4
+            %img(id="audreyphoto" src="assets/img/interview-audrey.jpeg" class="img-rounded" alt="audrey tan" title="audrey photo")
+          .span8
+            %h4
+              About Audrey
+            %p
+              Audrey is a New York based product manager, web designer, and front-end developer.  She loves beautiful things on the web.  She believes in taking risks, second chances and the inherent good of all people.  Reach out and say &#8220;Hi!&#8221;
+            %a(href="http://audreyhtan.com")
+              Visit her website
 
-                
-
-
-
-
-
-          
+    %script(type="text/javascript" src="assets/fancybox/lib/jquery.mousewheel-3.0.6.pack.js")
+    %script(type="text/javascript" src="assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.4")
+    %script(type="text/javascript" src="assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5")
+    :javascript
+      $(document).ready(function() {
+        $(".fancybox").fancybox();
+        $(".fancybox").fancybox({
+          padding : 0,
+          helpers : {
+              title: {
+                  type: 'over'
+              }
+          }
+        });
+      });

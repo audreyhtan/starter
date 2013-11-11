@@ -14,12 +14,12 @@
     <link href='http://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css'>
     <link href='assets/img/favicon.ico' rel='icon' type='image/x-icon'>
     <link href='assets/img/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <link href='assets/fancybox/source/jquery.fancybox.css?v=2.1.4' media='screen' rel='stylesheet' type='text/css'>
+    <link href='assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5' media='screen' rel='stylesheet' type='text/css'>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-41313867-1', 'audreyhtan.com');ga('send', 'pageview');
     </script>
-    <script>
-      src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
-    </script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
     <script>
       $(function() {$('a[href*=#]:not([href=#])').click(function() {if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {var target = $(this.hash);target = target.length ? target : $('[name=' + this.hash.slice(1) +']');if (target.length) {$('html,body').animate({scrollTop: target.offset().top}, 1000);return false;}}});});
     </script>
@@ -36,15 +36,17 @@
             s
           </span>
         </h1>
-        <p class='of'>
-          of
-        </p>
+        <div class='divide'>
+          <p class='of'>
+            of
+          </p>
+        </div>
         <h2 class='audreyt'>
           Audrey Tan
         </h2>
       </div>
     </section>
-    <section class='projects'>
+    <section class='projects' id='select'>
       <div class='container'>
         <div class='section-head'>
           <span class='head'>
@@ -134,28 +136,31 @@
             <p class='description'>
               Bacon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
             </p>
+            <a href='#select'>
+              contents
+            </a>
           </div>
           <div class='span8 offset1'>
             <div class='row-a grande'>
               <div class='col-5'>
-                <a class='fancybox' href='assets/img/ep-style.png' rel='gallery' title='Cairns Australia - home of the Great Barrier Reef.  First time scuba diving!'>
+                <a class='fancybox' href='assets/img/ep-style.png' rel='gallery' title='Custom Style Guide on Twitter Bootstrap 3 (LESS, modular CSS)'>
                   <img src='assets/img/ep-style.png'>
                 </a>
               </div>
             </div>
             <div class='row-a tall'>
               <div class='col-1'>
-                <a class='fancybox' href='assets/img/ep-mobile.png' rel='gallery' title='Visiting my niece Nayeli at Christmas time.  What a doll.'>
+                <a class='fancybox' href='assets/img/ep-mobile.png' rel='gallery' title='Contact Us page on mobile (responsive design, front-end dev, cross-browser testing)'>
                   <img src='assets/img/ep-mobile.png'>
                 </a>
               </div>
               <div class='col-2'>
-                <a class='fancybox' href='assets/img/ep-pricing.png' rel='gallery' title='Visiting my niece Nayeli at Christmas time.  What a doll.'>
+                <a class='fancybox' href='assets/img/ep-pricing.png' rel='gallery' title='Pricing Page  (product dev, UX, copywriting, front end dev)'>
                   <img src='assets/img/ep-pricing.png'>
                 </a>
               </div>
               <div class='col-2'>
-                <a class='fancybox' href='assets/img/ep-clients.jpg' rel='gallery' title='Visiting my niece Nayeli at Christmas time.  What a doll.'>
+                <a class='fancybox' href='assets/img/ep-clients.png' rel='gallery' title='Clients (Photoshop, web-design)'>
                   <img src='assets/img/ep-clients.png'>
                 </a>
               </div>
@@ -184,6 +189,9 @@
             <p class='description'>
               Bacon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
             </p>
+            <a href='#select'>
+              contents
+            </a>
           </div>
           <div class='span8 offset1'>
             <div class='row-a grande'>
@@ -239,6 +247,9 @@
             <p class='description'>
               Bacon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
             </p>
+            <a href='#select'>
+              contents
+            </a>
           </div>
           <div class='span8 offset1'>
             <div class='row-a grande'>
@@ -289,6 +300,9 @@
             <p class='description'>
               Bacon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
             </p>
+            <a href='#select'>
+              contents
+            </a>
           </div>
           <div class='span8 offset1'>
             <div class='row-a grande'>
@@ -339,6 +353,9 @@
             <p class='description'>
               Bacon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
             </p>
+            <a href='#select'>
+              contents
+            </a>
           </div>
           <div class='span8 offset1'>
             <div class='row-a grande'>
@@ -389,6 +406,9 @@
             <p class='description'>
               Bacon ipsum dolor sit amet salami flank jowl kevin tri-tip cow ground round, tenderloin brisket bacon biltong hamburger. Tongue pastrami andouille leberkas capicola jowl, tenderloin prosciutto ham ribeye pig ground round brisket. Short ribs filet mignon strip steak drumstick. Beef ribs pork pancetta strip steak tongue pig, bresaola leberkas capicola. Doner sirloin andouille pastrami.
             </p>
+            <a href='#select'>
+              contents
+            </a>
           </div>
           <div class='span8 offset1'>
             <div class='row-a grande'>
@@ -419,5 +439,41 @@
         </div>
       </div>
     </section>
+    <section id='about-audrey'>
+      <div class='container'>
+        <div class='row'>
+          <div class='span4'>
+            <img alt='audrey tan' class='img-rounded' id='audreyphoto' src='assets/img/interview-audrey.jpeg' title='audrey photo'>
+          </div>
+          <div class='span8'>
+            <h4>
+              About Audrey
+            </h4>
+            <p>
+              Audrey is a New York based product manager, web designer, and front-end developer.  She loves beautiful things on the web.  She believes in taking risks, second chances and the inherent good of all people.  Reach out and say &#8220;Hi!&#8221;
+            </p>
+            <a href='http://audreyhtan.com'>
+              Visit her website
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src='assets/fancybox/lib/jquery.mousewheel-3.0.6.pack.js' type='text/javascript'></script>
+    <script src='assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.4' type='text/javascript'></script>
+    <script src='assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5' type='text/javascript'></script>
+    <script>
+      $(document).ready(function() {
+        $(".fancybox").fancybox();
+        $(".fancybox").fancybox({
+          padding : 0,
+          helpers : {
+              title: {
+                  type: 'over'
+              }
+          }
+        });
+      });
+    </script>
   </body>
 </html>

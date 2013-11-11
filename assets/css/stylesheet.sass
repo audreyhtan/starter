@@ -9,6 +9,16 @@ ul,
 li,
   font: $font-base $serif
 
+.span3
+  a
+    text-decoration: none
+    color: #333
+    text-transform: uppercase
+    font-family: "Lato", sans-serif
+    font-weight: 700
+    &:hover
+      text-decoration: underline
+
 .top
   background-color: $red-color
   position: relative
@@ -146,6 +156,25 @@ section
       padding-left: 35px
       padding-right: 20px
 
+.divide
+  margin-top: 70px
+  margin-bottom: 30px
+  border-top: 1px solid #000
+  position: relative
+  text-align: center
+  width: 84%
+  left: 49px
+
+.divide
+  p
+    &.of
+      position: relative
+      top: -13px
+      display: inline-block
+      background-color: #c03030
+      padding-left: 26px
+      padding-right: 20px
+
 .top-margin
   margin-top: 40px
 
@@ -196,8 +225,12 @@ section
 
 #ep-showcase,
 #torres-showcase,
-#homeswap-showcase
+#homeswap-showcase,
+#about-audrey
   background-color: #efefef
+
+#about-audrey
+  padding: 60px 0px
 
 .inline
   a
