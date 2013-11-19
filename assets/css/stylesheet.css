@@ -74,21 +74,39 @@ h1.company {
   margin-bottom: 14px;
   overflow: hidden;
   -webkit-filter: grayscale(100%);
-  -webkit-transition: -webkit-filter 0.5s ease-in-out; }
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -webkit-transition: -webkit-filter 0.5s ease-in-out;
+  -moz-transition: -moz-filter 0.5s ease-in-out;
+  -ms-transition: -ms-filter 0.5s ease-in-out;
+  -o-transition: -o-filter 0.5s ease-in-out; }
 
 a:hover {
   text-decoration: none; }
   a:hover .project {
-    -webkit-filter: grayscale(0); }
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0); }
   a:hover .project-name {
     opacity: 1; }
 
 .span8.offset1 a img {
   -webkit-filter: grayscale(100%);
-  -webkit-transition: -webkit-filter 0.15s ease-in-out; }
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -webkit-transition: -webkit-filter 0.15s ease-in-out;
+  -moz-transition: -moz-filter 0.15s ease-in-out;
+  -ms-transition: -ms-filter 0.15s ease-in-out;
+  -o-transition: -o-filter 0.15s ease-in-out; }
 
 .span8.offset1:hover img {
-  -webkit-filter: grayscale(0); }
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  -o-filter: grayscale(0); }
 
 .ep {
   background-image: url("../img/ep-2.jpg"); }
@@ -113,6 +131,9 @@ a:hover {
   bottom: 0px;
   opacity: 0;
   -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -ms-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
   font-size: 13.5px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
