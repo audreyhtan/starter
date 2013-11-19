@@ -707,7 +707,7 @@ h2.education {
 }
 
 article {
-  padding: 15px;
+  padding: 10px 15px;
   transition: all .5s ease;
     -o-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -782,6 +782,15 @@ float: left;
 clear: left;
 margin-bottom: 1em;
 }
+}
+
+@media (min-width: 501px) and (max-width: 621px) {
+  #resumetitle {
+  padding-bottom: 40px;
+  font-size: 3em;
+  margin: .25 auto;
+  letter-spacing: 10px;
+  }
 }
 
 /*Transforms*/
