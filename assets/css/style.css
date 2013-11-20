@@ -988,6 +988,13 @@ margin-bottom: 1em;
   display: block;
 }
 
+/*Kickstarter page*/
+
+h1.kickstarter {
+  font-size: 29.5px;
+}
+
+
 
 /*TED page*/
 
