@@ -41,4 +41,18 @@ $(document).ready(function(event){
     });
   });
 
+// Portfolio media queries
+  if ($(window).width() <= 980) {
+      $(".hide-phone").remove();
+    }
+
+  $(window).resize(function() {
+    if ($(window).width() <= 980) {
+      $(".hide-phone").remove();
+    }
+    if ($(window).width() >= 981) {
+      $(".hide-phone").add(".hide-phone");
+    }
+  });
+
 }); //document ready

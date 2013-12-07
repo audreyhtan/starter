@@ -21,7 +21,7 @@
     %script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
     :javascript
       $(function() {$('a[href*=#]:not([href=#])').click(function() {if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {var target = $(this.hash);target = target.length ? target : $('[name=' + this.hash.slice(1) +']');if (target.length) {$('html,body').animate({scrollTop: target.offset().top}, 1000);return false;}}});});
-  %body
+  %body.works
     %section.top
       .welcome.center-head
         %h1
@@ -36,45 +36,48 @@
         %h2.audreyt
           Audrey Tan
     %section.projects#select
-      .container
+      .center-text
         .section-head
           %span.head
             %h1.content
               Collection
-        .row
-          %a(href="#ep-showcase")
-            .project.ep
-              .project-name
-                Easy Pairings
-          %a(href="#waggit-showcase")
-            .project.waggit
-              .project-name
-                Waggit
-          %a(href="#torres-showcase")
-            .project.torres
-              .project-name
-                TVLG
-          %a(href="#gearlance-showcase")
-            .project.gearlance
-              .project-name
-                Gearlance
-          %a(href="#homeswap-showcase")
-            .project.homeswap
-              .project-name
-                Homeswap
-          %a(href="#assurant-showcase")
-            .project.assurant
-              .project-name
-                Assurant Health
-        .row
-          .span6.center-text
+        .row-fluid
+          .span12.center-text
+            %a(href="#ep-showcase")
+              .project.ep
+                .project-name
+                  Easy Pairings
+            %a(href="#waggit-showcase")
+              .project.waggit
+                .project-name
+                  Waggit
+            %a(href="#torres-showcase")
+              .project.torres
+                .project-name
+                  TVLG
+        .row-fluid
+          .span12.center-text
+            %a(href="#gearlance-showcase")
+              .project.gearlance
+                .project-name
+                  Gearlance
+            %a(href="#homeswap-showcase")
+              .project.homeswap
+                .project-name
+                  Homeswap
+            %a(href="#assurant-showcase")
+              .project.assurant
+                .project-name
+                  Assurant Health
+        .container-fluid
+          .center-text
             %blockquote.top-margin.no-border
               .quote
                 &#8220;We dream to give ourselves hope. To stop dreaming - well, that’s like saying you can never change your fate.&#8221;
               %small.amy
                 Amy Tan, The Hundred Secret Senses
     %section.projects#ep-showcase
-      .container
+      .container-fluid
         .row
           .span3
             %h1.company
@@ -100,7 +103,7 @@
                 %li Copywriting
             %a(href="#select")
               contents
-          .span8.offset1
+          .span8.offset1.hide-phone
             .row-a.grande
               .col-5
                 %a(href="assets/img/ep-style.png" class="fancybox" rel="gallery" title="Custom Style Guide on Twitter Bootstrap 3 (LESS, Modular CSS)")
@@ -116,7 +119,7 @@
                 %a(href="assets/img/ep-clients.png" class="fancybox" rel="gallery" title="Clients (Photoshop, Web Design)")
                   %img(src="assets/img/ep-clients.png")
     %section.projects#waggit-showcase
-      .container
+      .container-fluid
         .row
           .span3
             %h1.company
@@ -137,7 +140,7 @@
                 %li Copywriting
             %a(href="#select")
               contents
-          .span8.offset1
+          .span8.offset1.hide-phone
             .row-a.grande
               .col-5
                 %a(href="assets/img/waggit-home2.jpg" class="fancybox" rel="gallery" title="Waggit landing page (Copywriting, Wireframing)")
@@ -156,7 +159,7 @@
                 %a(href="assets/img/waggit-ad-2.png" class="fancybox" rel="gallery" title="Printed bulletins to distribute in local neighborhoods (Design, Illustration)")
                   %img(src="assets/img/waggit-ad-2.png")
     %section.projects#torres-showcase
-      .container
+      .container-fluid
         .row
           .span3
             %h1.company
@@ -176,7 +179,7 @@
                 %li Responsive Design
             %a(href="#select")
               contents
-          .span8.offset1
+          .span8.offset1.hide-phone
             .row-a.grande
               .col-5
                 %a(href="assets/img/torres-home.png" class="fancybox" rel="gallery" title="Landing page (Typography, Design)")
@@ -192,7 +195,7 @@
                 %a(href="assets/img/torres-bio.png" class="fancybox" rel="gallery" title="Biography of Jorge Torres (Wordpress Dev, Typography)")
                   %img(src="assets/img/torres-bio.png")
     %section.projects#gearlance-showcase
-      .container
+      .container-fluid
         .row
           .span3
             %h1.company
@@ -213,7 +216,7 @@
                 %li Copywriting
             %a(href="#select")
               contents
-          .span8.offset1
+          .span8.offset1.hide-phone
             .row-a.grande
               .col-5
                 %a(href="assets/img/gearlance-home.jpg" class="fancybox" rel="gallery" title="Landing Page (Copywriting, Design)")
@@ -229,7 +232,7 @@
                 %a(href="assets/img/gearlance-item.jpg" class="fancybox" rel="gallery" title="View of an individual item (Front End Dev, Usability)")
                   %img(src="assets/img/gearlance-item.jpg")
     %section.projects#homeswap-showcase
-      .container
+      .container-fluid
         .row
           .span3
             %h1.company
@@ -249,7 +252,7 @@
                 %li Customer Development
             %a(href="#select")
               contents
-          .span8.offset1
+          .span8.offset1.hide-phone
             .row-a.grande
               .col-5
                 %a(href="assets/img/homeswap-blog.png" class="fancybox" rel="gallery" title="HomeSwap blog (Writing, Blogger Outreach)")
@@ -265,7 +268,7 @@
                 %a(href="assets/img/homeswap-list.jpg" class="fancybox" rel="gallery" title="HomeSwap Listing (Customer Development)")
                   %img(src="assets/img/homeswap-list.jpg")
     %section.projects#assurant-showcase
-      .container
+      .container-fluid
         .row
           .span3
             %h1.company
@@ -286,7 +289,7 @@
                 %li Requirements Definition
             %a(href="#select")
               contents
-          .span8.offset1
+          .span8.offset1.hide-phone
             .row-a.grande
               .col-5
                 %a(href="assets/img/assurant-highfed.png" class="fancybox" rel="gallery" title="High fidelity mockup of getting a quote for Supplemental coverage (Wireframes, Prototyping)")
@@ -302,8 +305,8 @@
                 %a(href="assets/img/assurant-prior.png" class="fancybox" rel="gallery" title="Wireframe of Prior Coverage interface (Prototyping, Wireframes, Usability)")
                   %img(src="assets/img/assurant-prior.png")
     %section#about-audrey
-      .container
-        .row
+      .container-fluid
+        .row-fluid
           .span4
             %img(id="audreyphoto" src="assets/img/interview-audrey.jpeg" class="img-rounded" alt="audrey tan" title="audrey photo")
           .span8
@@ -313,7 +316,7 @@
               Audrey is a New York based product manager, web designer, and front-end developer.  She loves beautiful things on the web.  She believes in taking risks, second chances and the inherent good of all people.  Reach out and say &#8220;Hi!&#8221;
             %a(href="http://audreyhtan.com")
               Visit her website
-
+    %script(type="text/javascript" src="assets/js/script.js")
     %script(type="text/javascript" src="assets/fancybox/lib/jquery.mousewheel-3.0.6.pack.js")
     %script(type="text/javascript" src="assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.4")
     %script(type="text/javascript" src="assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5")

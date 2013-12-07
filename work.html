@@ -24,7 +24,7 @@
       $(function() {$('a[href*=#]:not([href=#])').click(function() {if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {var target = $(this.hash);target = target.length ? target : $('[name=' + this.hash.slice(1) +']');if (target.length) {$('html,body').animate({scrollTop: target.offset().top}, 1000);return false;}}});});
     </script>
   </head>
-  <body>
+  <body class='works'>
     <section class='top'>
       <div class='welcome center-head'>
         <h1>
@@ -47,7 +47,7 @@
       </div>
     </section>
     <section class='projects' id='select'>
-      <div class='container'>
+      <div class='center-text'>
         <div class='section-head'>
           <span class='head'>
             <h1 class='content'>
@@ -55,52 +55,58 @@
             </h1>
           </span>
         </div>
-        <div class='row'>
-          <a href='#ep-showcase'>
-            <div class='project ep'>
-              <div class='project-name'>
-                Easy Pairings
+        <div class='row-fluid'>
+          <div class='span12 center-text'>
+            <a href='#ep-showcase'>
+              <div class='project ep'>
+                <div class='project-name'>
+                  Easy Pairings
+                </div>
               </div>
-            </div>
-          </a>
-          <a href='#waggit-showcase'>
-            <div class='project waggit'>
-              <div class='project-name'>
-                Waggit
+            </a>
+            <a href='#waggit-showcase'>
+              <div class='project waggit'>
+                <div class='project-name'>
+                  Waggit
+                </div>
               </div>
-            </div>
-          </a>
-          <a href='#torres-showcase'>
-            <div class='project torres'>
-              <div class='project-name'>
-                TVLG
+            </a>
+            <a href='#torres-showcase'>
+              <div class='project torres'>
+                <div class='project-name'>
+                  TVLG
+                </div>
               </div>
-            </div>
-          </a>
-          <a href='#gearlance-showcase'>
-            <div class='project gearlance'>
-              <div class='project-name'>
-                Gearlance
-              </div>
-            </div>
-          </a>
-          <a href='#homeswap-showcase'>
-            <div class='project homeswap'>
-              <div class='project-name'>
-                Homeswap
-              </div>
-            </div>
-          </a>
-          <a href='#assurant-showcase'>
-            <div class='project assurant'>
-              <div class='project-name'>
-                Assurant Health
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
-        <div class='row'>
-          <div class='span6 center-text'>
+        <div class='row-fluid'>
+          <div class='span12 center-text'>
+            <a href='#gearlance-showcase'>
+              <div class='project gearlance'>
+                <div class='project-name'>
+                  Gearlance
+                </div>
+              </div>
+            </a>
+            <a href='#homeswap-showcase'>
+              <div class='project homeswap'>
+                <div class='project-name'>
+                  Homeswap
+                </div>
+              </div>
+            </a>
+            <a href='#assurant-showcase'>
+              <div class='project assurant'>
+                <div class='project-name'>
+                  Assurant Health
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class='container-fluid'>
+          <div class='center-text'>
             <blockquote class='top-margin no-border'>
               <div class='quote'>
                 &#8220;We dream to give ourselves hope. To stop dreaming - well, that’s like saying you can never change your fate.&#8221;
@@ -114,7 +120,7 @@
       </div>
     </section>
     <section class='projects' id='ep-showcase'>
-      <div class='container'>
+      <div class='container-fluid'>
         <div class='row'>
           <div class='span3'>
             <h1 class='company'>
@@ -149,7 +155,7 @@
               contents
             </a>
           </div>
-          <div class='span8 offset1'>
+          <div class='span8 offset1 hide-phone'>
             <div class='row-a grande'>
               <div class='col-5'>
                 <a class='fancybox' href='assets/img/ep-style.png' rel='gallery' title='Custom Style Guide on Twitter Bootstrap 3 (LESS, Modular CSS)'>
@@ -179,7 +185,7 @@
       </div>
     </section>
     <section class='projects' id='waggit-showcase'>
-      <div class='container'>
+      <div class='container-fluid'>
         <div class='row'>
           <div class='span3'>
             <h1 class='company'>
@@ -208,7 +214,7 @@
               contents
             </a>
           </div>
-          <div class='span8 offset1'>
+          <div class='span8 offset1 hide-phone'>
             <div class='row-a grande'>
               <div class='col-5'>
                 <a class='fancybox' href='assets/img/waggit-home2.jpg' rel='gallery' title='Waggit landing page (Copywriting, Wireframing)'>
@@ -243,7 +249,7 @@
       </div>
     </section>
     <section class='projects' id='torres-showcase'>
-      <div class='container'>
+      <div class='container-fluid'>
         <div class='row'>
           <div class='span3'>
             <h1 class='company'>
@@ -271,7 +277,7 @@
               contents
             </a>
           </div>
-          <div class='span8 offset1'>
+          <div class='span8 offset1 hide-phone'>
             <div class='row-a grande'>
               <div class='col-5'>
                 <a class='fancybox' href='assets/img/torres-home.png' rel='gallery' title='Landing page (Typography, Design)'>
@@ -301,7 +307,7 @@
       </div>
     </section>
     <section class='projects' id='gearlance-showcase'>
-      <div class='container'>
+      <div class='container-fluid'>
         <div class='row'>
           <div class='span3'>
             <h1 class='company'>
@@ -330,7 +336,7 @@
               contents
             </a>
           </div>
-          <div class='span8 offset1'>
+          <div class='span8 offset1 hide-phone'>
             <div class='row-a grande'>
               <div class='col-5'>
                 <a class='fancybox' href='assets/img/gearlance-home.jpg' rel='gallery' title='Landing Page (Copywriting, Design)'>
@@ -360,7 +366,7 @@
       </div>
     </section>
     <section class='projects' id='homeswap-showcase'>
-      <div class='container'>
+      <div class='container-fluid'>
         <div class='row'>
           <div class='span3'>
             <h1 class='company'>
@@ -388,10 +394,10 @@
               contents
             </a>
           </div>
-          <div class='span8 offset1'>
+          <div class='span8 offset1 hide-phone'>
             <div class='row-a grande'>
               <div class='col-5'>
-                <a class='fancybox' href='assets/img/homeswap-blog.png' rel='gallery' title='HomeSwap blog (Writing, Blogger Outreach'>
+                <a class='fancybox' href='assets/img/homeswap-blog.png' rel='gallery' title='HomeSwap blog (Writing, Blogger Outreach)'>
                   <img src='assets/img/homeswap-blog.png'>
                 </a>
               </div>
@@ -418,7 +424,7 @@
       </div>
     </section>
     <section class='projects' id='assurant-showcase'>
-      <div class='container'>
+      <div class='container-fluid'>
         <div class='row'>
           <div class='span3'>
             <h1 class='company'>
@@ -447,7 +453,7 @@
               contents
             </a>
           </div>
-          <div class='span8 offset1'>
+          <div class='span8 offset1 hide-phone'>
             <div class='row-a grande'>
               <div class='col-5'>
                 <a class='fancybox' href='assets/img/assurant-highfed.png' rel='gallery' title='High fidelity mockup of getting a quote for Supplemental coverage (Wireframes, Prototyping)'>
@@ -477,8 +483,8 @@
       </div>
     </section>
     <section id='about-audrey'>
-      <div class='container'>
-        <div class='row'>
+      <div class='container-fluid'>
+        <div class='row-fluid'>
           <div class='span4'>
             <img alt='audrey tan' class='img-rounded' id='audreyphoto' src='assets/img/interview-audrey.jpeg' title='audrey photo'>
           </div>
@@ -496,6 +502,7 @@
         </div>
       </div>
     </section>
+    <script src='assets/js/script.js' type='text/javascript'></script>
     <script src='assets/fancybox/lib/jquery.mousewheel-3.0.6.pack.js' type='text/javascript'></script>
     <script src='assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.4' type='text/javascript'></script>
     <script src='assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5' type='text/javascript'></script>
