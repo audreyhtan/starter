@@ -273,11 +273,17 @@ section h1.content {
   padding-top: 4px;
   padding-right: 8px; }
 
+.sm-view {
+  display: inline; }
+  @media screen and (min-width: 980px) {
+    .sm-view {
+      display: none; } }
+
 #ep-showcase,
 #torres-showcase,
 #homeswap-showcase,
 #about-audrey {
-  background-color: #efefef; }
+  background-color: #f0f0f0; }
 
 #about-audrey {
   padding: 60px 0px; }
