@@ -661,8 +661,10 @@ h3.job-employer,
 h4.job-location,
 h5.job-title,
 h4.headline,
-h3.homework-title {
+h3.homework-title,
+h5.school {
   font-family: 'Open Sans', Helvetica, Sans-Serif;
+  font-weight: 400;
 }
 
 h2.work-experience,
