@@ -166,6 +166,10 @@ ul.contents li a {
 	margin-top: 50px;
 }
 
+.social-resume {
+  margin: 20px 0px;
+}
+
 .circle {
 	border-radius: 100%;
 	background: #777;
@@ -190,6 +194,13 @@ ul.contents li a {
     background-color:white; /*workaround to make clickable in IE */
     opacity: 0; /*workaround to make clickable in IE */
     filter: alpha(opacity=1); /*workaround to make clickable in IE */
+}
+
+.circle {
+  transition: all .5s ease;
+      -o-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -webkit-transition: all .5s ease;
 }
 
 .circle:hover {
@@ -645,6 +656,7 @@ p.photo_container img {
 h2.work-experience,
 h2.skills,
 h2.education,
+h2.contact,
 h3.job-employer,
 h4.job-location,
 h5.job-title,
@@ -655,7 +667,8 @@ h3.homework-title {
 
 h2.work-experience,
 h2.skills,
-h2.education {
+h2.education,
+h2.contact {
   /*font-size: 14px;*/
   font-size: 1.7em;
 }
@@ -666,16 +679,14 @@ h2.education {
   font-size: 2em;
   letter-spacing: 2px;
   font-weight: 300;
-  text-align: center;
   padding-bottom: .5em;
   margin: .5em auto;
-  border-bottom: 3px double;
   text-transform: uppercase;
 }
 
 #resumetitle a {
   text-decoration: none;
-  color: rgb(51, 51, 51);
+  color: #999;
 }
 
 #resumetitle a:hover {
@@ -688,7 +699,6 @@ h2.education {
   padding: 15px;
 }
 
-
 @media (min-width: 500px){
 
 #resumetitle {
@@ -696,6 +706,13 @@ h2.education {
   font-size: 4em;
   margin: .25 auto;
   letter-spacing: 10px;
+}
+
+#resumetitle a {
+  transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
 }
 
 .date-ranges {
@@ -716,7 +733,6 @@ article {
 
 article:hover {
   background-color: #f2f2f2;
-  /*border-radius: 10px;*/
 }
 
 article hgroup {
@@ -768,7 +784,7 @@ margin-top: 15px;
   margin-top: 30px;
   text-align: center;
   padding-top: 30px;
-  border-top: 3px double;
+  /*border-top: 3px double;*/
 
 }
 
