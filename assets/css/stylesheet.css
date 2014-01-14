@@ -135,6 +135,9 @@ a:hover {
   -ms-filter: grayscale(0);
   -o-filter: grayscale(0); }
 
+.sochi {
+  background-image: url("../img/mountains.jpg"); }
+
 .ep {
   background-image: url("../img/ep-2.jpg"); }
 
@@ -241,7 +244,7 @@ section h1.content {
   margin: auto; }
 
 .amy {
-  line-height: 4em;
+  margin-top: 10px;
   font-family: "Gentium Book Basic", serif-webkit-body;
   text-transform: uppercase; }
 
@@ -279,12 +282,6 @@ section h1.content {
     .sm-view {
       display: none; } }
 
-#ep-showcase,
-#torres-showcase,
-#homeswap-showcase,
-#about-audrey {
-  background-color: #f0f0f0; }
-
 #about-audrey {
   padding: 60px 0px; }
 
@@ -313,6 +310,9 @@ section h1.content {
 
 .col-1 {
   width: 20%; }
+
+.col-half {
+  width: 10%; }
 
 .row-a img {
   border-left: 3px solid white;

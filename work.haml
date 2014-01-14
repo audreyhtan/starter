@@ -43,6 +43,10 @@
               Collection
         .row-fluid
           .span12.center-text
+            %a(href="#sochi-showcase")
+              .project.sochi
+                .project-name
+                  Sochi Olympics
             %a(href="#ep-showcase")
               .project.ep
                 .project-name
@@ -51,20 +55,16 @@
               .project.waggit
                 .project-name
                   Waggit
+        .row-fluid
+          .span12.center-text
             %a(href="#torres-showcase")
               .project.torres
                 .project-name
                   TVLG
-        .row-fluid
-          .span12.center-text
             %a(href="#gearlance-showcase")
               .project.gearlance
                 .project-name
                   Gearlance
-            %a(href="#homeswap-showcase")
-              .project.homeswap
-                .project-name
-                  Homeswap
             %a(href="#assurant-showcase")
               .project.assurant
                 .project-name
@@ -76,6 +76,49 @@
                 &#8220;We dream to give ourselves hope. To stop dreaming - well, that’s like saying you can never change your fate.&#8221;
               %small.amy
                 Amy Tan, The Hundred Secret Senses
+    %section.projects#sochi-showcase
+      .container-fluid
+        .row
+          .span3
+            %h1.company
+              Sochi 2014
+            %hr
+            .one-liner
+              A mobile app for the Winter Olympics in Sochi, Russia
+            %p.description
+              %span.firstletter 
+                I
+              nspired to create something new and try my hand at mobile design, I created these mockups for an app that would consolidate the news, events schedules and athlete profiles of the 2014 Winter Olympics in Sochi.  The number of sporting events, sub-categories per event and daily schedules made this a fun information architecture challenge. Being limited to tap and swipe motions was good practice in articulating detailed interaction gestures unique to mobile devices.  
+            %p.description
+              %ul
+                %li Iconography
+                %li Information Architecture
+                %li Mobile Design
+            .sm-view
+              %a(href="sochi.html")
+                View Work
+            .hide-phone
+              %a(href="#select")
+                contents
+          .span8.offset1.hide-phone
+            .row-a.grande
+              .col-5
+                %a(href="assets/img/sochi-home.jpg" class="fancybox" rel="gallery" title="Loading screen")
+                  %img(src="assets/img/sochi-home.jpg")
+            .row-a.tall           
+              .col-half
+              .col-1
+                %a(href="assets/img/sochi-menu.jpg" class="fancybox" rel="gallery" title="App menu swipe view")
+                  %img(src="assets/img/sochi-menu.jpg")
+              .col-1
+                %a(href="assets/img/sochi-news.jpg" class="fancybox" rel="gallery" title="Latest news aggregated from affliate sources")
+                  %img(src="assets/img/sochi-news.jpg")
+              .col-1
+                %a(href="assets/img/sochi-article.jpg" class="fancybox" rel="gallery" title="Scrolling a news article")
+                  %img(src="assets/img/sochi-article.jpg")
+              .col-1
+                %a(href="assets/img/sochi-athlete.jpg" class="fancybox" rel="gallery" title="Athlete view that allows fans to Tweet at the individual")
+                  %img(src="assets/img/sochi-athlete.jpg") 
     %section.projects#ep-showcase
       .container-fluid
         .row
@@ -110,7 +153,7 @@
           .span8.offset1.hide-phone
             .row-a.grande
               .col-5
-                %a(href="assets/img/ep-style.png" class="fancybox" rel="gallery" title="Custom Style Guide on Twitter Bootstrap 3 (LESS, Modular CSS)")
+                %a(href="assets/img/ep-style.png" class="fancybox" rel="gallery" title="Custom style guide on Twitter Bootstrap 3 (LESS, Modular CSS)")
                   %img(src="assets/img/ep-style.png")
             .row-a.tall           
               .col-1
@@ -201,7 +244,7 @@
                 %a(href="assets/img/torres-contact.png" class="fancybox" rel="gallery" title="Contact Page (Design, Wordpress Dev)")
                   %img(src="assets/img/torres-contact.png")
               .col-1
-                %a(href="assets/img/torres-guide.png" class="fancybox" rel="gallery" title="Page from Design and Style Guide (Design, Client Work)")
+                %a(href="assets/img/torres-guide.png" class="fancybox" rel="gallery" title="Page from design and style guide (Design, Client Work)")
                   %img(src="assets/img/torres-guide.png")
               .col-2
                 %a(href="assets/img/torres-bio.png" class="fancybox" rel="gallery" title="Biography of Jorge Torres (Wordpress Dev, Typography)")
@@ -247,7 +290,7 @@
               .col-2
                 %a(href="assets/img/gearlance-item.jpg" class="fancybox" rel="gallery" title="View of an individual item (Front End Dev, Usability)")
                   %img(src="assets/img/gearlance-item.jpg")
-    %section.projects#homeswap-showcase
+    -#%section.projects#homeswap-showcase
       .container-fluid
         .row
           .span3
