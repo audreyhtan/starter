@@ -726,7 +726,7 @@ h2.contact {
 }
 
 article {
-  padding: 10px 15px;
+  padding: 10px 5px;
   transition: all .5s ease;
     -o-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -779,7 +779,7 @@ margin-top: 15px;
 }
 
 .span8 section {
-  padding-right: 50px;
+  padding-right: 30px;
 }
 
 .span12 .social {
